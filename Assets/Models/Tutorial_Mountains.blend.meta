@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 51afa9af7a48a4c4f8b9747f58c99164
+timeCreated: 1496612396
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cloud
+    100002: Cloud_001
+    100004: Cloud_002
+    100006: Mountain
+    100008: Tree
+    100010: Tree2
+    100012: Tree2_001
+    100014: Tree2_002
+    100016: Tree2_003
+    100018: Tree2_004
+    100020: Tree_001
+    100022: Tree_002
+    100024: Tree_003
+    100026: Tree_004
+    100028: Tree_005
+    100030: Tree_006
+    100032: Tree_007
+    100034: Tree_008
+    100036: Tree_009
+    100038: //RootNode
+    400000: Cloud
+    400002: Cloud_001
+    400004: Cloud_002
+    400006: Mountain
+    400008: Tree
+    400010: Tree2
+    400012: Tree2_001
+    400014: Tree2_002
+    400016: Tree2_003
+    400018: Tree2_004
+    400020: Tree_001
+    400022: Tree_002
+    400024: Tree_003
+    400026: Tree_004
+    400028: Tree_005
+    400030: Tree_006
+    400032: Tree_007
+    400034: Tree_008
+    400036: Tree_009
+    400038: //RootNode
+    2300000: Cloud
+    2300002: Cloud_001
+    2300004: Cloud_002
+    2300006: Mountain
+    2300008: Tree
+    2300010: Tree2
+    2300012: Tree2_001
+    2300014: Tree2_002
+    2300016: Tree2_003
+    2300018: Tree2_004
+    2300020: Tree_001
+    2300022: Tree_002
+    2300024: Tree_003
+    2300026: Tree_004
+    2300028: Tree_005
+    2300030: Tree_006
+    2300032: Tree_007
+    2300034: Tree_008
+    2300036: Tree_009
+    3300000: Cloud
+    3300002: Cloud_001
+    3300004: Cloud_002
+    3300006: Mountain
+    3300008: Tree
+    3300010: Tree2
+    3300012: Tree2_001
+    3300014: Tree2_002
+    3300016: Tree2_003
+    3300018: Tree2_004
+    3300020: Tree_001
+    3300022: Tree_002
+    3300024: Tree_003
+    3300026: Tree_004
+    3300028: Tree_005
+    3300030: Tree_006
+    3300032: Tree_007
+    3300034: Tree_008
+    3300036: Tree_009
+    4300000: Tree_009
+    4300002: Tree2_004
+    4300004: Tree_008
+    4300006: Tree2_003
+    4300008: Tree_007
+    4300010: Tree2_002
+    4300012: Tree2_001
+    4300014: Tree_006
+    4300016: Tree_005
+    4300018: Tree_004
+    4300020: Tree_003
+    4300022: Tree_002
+    4300024: Tree_001
+    4300026: Cloud_002
+    4300028: Cloud_001
+    4300030: Cloud
+    4300032: Tree2
+    4300034: Tree
+    4300036: Mountain
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
