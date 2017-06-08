@@ -15,6 +15,10 @@ namespace VRStandardAssets.Examples
         [SerializeField] private Renderer m_Renderer;
 
 
+		public Color GlowColor;
+		private Color _targetColor;
+
+
         private void Awake ()
         {
             m_Renderer.material = m_NormalMaterial;
@@ -42,6 +46,17 @@ namespace VRStandardAssets.Examples
         //Handle the Over event
         private void HandleOver()
         {
+			
+			if (_targetColor != GlowColor) {
+				_targetColor = GlowColor;
+
+			} else if(_targetColor != Color.black){
+				_targetColor = Color.black;
+			}
+
+
+			enabled = true;
+
             Debug.Log("Show over state");
             m_Renderer.material = m_OverMaterial;
         }
