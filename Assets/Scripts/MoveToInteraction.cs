@@ -7,11 +7,11 @@ public class MoveToInteraction : MonoBehaviour {
 
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 	[SerializeField] private Reticle reticle;
-	[SerializeField] private Unit_Movement unit;
+	private Ship_Manager player_ship;
 
 	// Use this for initialization
 	void Start () {
-		
+		player_ship = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Ship_Manager> ();
 	}
 	
 	// Update is called once per frame
@@ -47,19 +47,14 @@ public class MoveToInteraction : MonoBehaviour {
 	//Handle the Out event
 	private void HandleOut()
 	{
-		//raycaster.OnRaycasthit -= SetTarget;
+		
 	}
 
 
 	//Handle the Click event
 	private void HandleClick()
 	{
-		SetTarget (reticle.ReticleTransform);
-	}
-
-	private void SetTarget(Transform next_target)
-	{
-		unit.target = next_target.position;
+		player_ship.MoveUnitTo(reticle.ReticleTransform);
 	}
 
 

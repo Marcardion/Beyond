@@ -99,15 +99,14 @@ public class Waypoint : MonoBehaviour
 
 			remaining_distance = Vector3.Distance (activeCameraPosition.position, myCameraPosition.position);
 
-			while (remaining_distance >= 0.1)
+			while (remaining_distance >= 0.5)
 			{
-				activeCameraPosition.position = Vector3.Lerp (activeCameraPosition.position, myCameraPosition.position, Time.deltaTime*0.2f);
+				activeCameraPosition.position = Vector3.Lerp (activeCameraPosition.position, myCameraPosition.position, Time.deltaTime*0.4f);
 				remaining_distance = Vector3.Distance (activeCameraPosition.position, myCameraPosition.position);
 				yield return new WaitForFixedUpdate ();
 			}
 
 			activeCameraPosition.position = myCameraPosition.position;
 			m_Renderer.enabled = true;
-			//activeCameraPosition.rotation = myCameraPosition.rotation;
 		}
 }

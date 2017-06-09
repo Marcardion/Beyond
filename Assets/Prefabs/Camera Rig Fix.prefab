@@ -114,6 +114,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4725127641558564}
+  - component: {fileID: 114036480681228018}
   m_Layer: 0
   m_Name: Camera Rig Fix
   m_TagString: CameraRig
@@ -231,6 +232,18 @@ MonoBehaviour:
   m_HideOnStart: 0
   m_Selection: {fileID: 114372568522165938}
   m_VRInput: {fileID: 114673419605481556}
+--- !u!114 &114036480681228018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787232317884802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda04353dcfa53d4d84c124fd1ba0a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reticle_center: {fileID: 114384743674811912}
 --- !u!114 &114125538586146818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -320,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 3264d49bcc9a5994baec39653f84c21e, type: 2}
-  m_Color: {r: 0.9137255, g: 0.11764706, b: 0.3882353, a: 1}
+  m_Color: {r: 0.40862745, g: 0.9137255, b: 0.11764703, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -435,7 +448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DefaultDistance: 200
-  m_UseNormal: 1
+  m_UseNormal: 0
   m_Image: {fileID: 114384743674811912}
   m_ReticleTransform: {fileID: 224251815247484468}
   m_Camera: {fileID: 4758541073373798}

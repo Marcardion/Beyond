@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4322254188360840}
   m_Layer: 0
   m_Name: Camera Position
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,6 +141,7 @@ MonoBehaviour:
   m_InteractiveItem: {fileID: 114876853622585522}
   m_Renderer: {fileID: 23914014967660292}
   myCameraPosition: {fileID: 4322254188360840}
+  cameraFade: {fileID: 0}
 --- !u!114 &114876853622585522
 MonoBehaviour:
   m_ObjectHideFlags: 1
