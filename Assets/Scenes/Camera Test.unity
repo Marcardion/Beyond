@@ -263,18 +263,9 @@ Prefab:
       propertyPath: m_Name
       value: Camera Rig
       objectReference: {fileID: 0}
-    - target: {fileID: 114864761978324138, guid: 83b61ef6aa6ad8f4587009122a89b167,
-        type: 2}
-      propertyPath: m_UseNormal
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83b61ef6aa6ad8f4587009122a89b167, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &276001464 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400166, guid: 09fd5bc2d8f8b4e46bd6453b68d75260, type: 3}
-  m_PrefabInternal: {fileID: 2091632267}
 --- !u!1001 &445312480
 Prefab:
   m_ObjectHideFlags: 0
@@ -736,7 +727,7 @@ Transform:
   m_LocalPosition: {x: -2.351, y: 0.17, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 276001464}
+  - {fileID: 2091632268}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -783,7 +774,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 95b9e5bcc4d2554458b66d1e555426c4, type: 2}
+  - {fileID: 2100000, guid: 2d86aea06d5dbb941932e48eccf48e36, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -976,6 +967,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09fd5bc2d8f8b4e46bd6453b68d75260, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &2091632268 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 2091632267}
 --- !u!1 &2139165181
 GameObject:
   m_ObjectHideFlags: 0
