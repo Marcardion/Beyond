@@ -5,6 +5,7 @@ using VRStandardAssets.Utils;
 public class GlowObject : MonoBehaviour
 {
 	public Color GlowColor;
+	public Color GlowClickColor;
 	public float LerpFactor = 10;
 
 	public Renderer[] Renderers
@@ -34,7 +35,10 @@ public class GlowObject : MonoBehaviour
 
 	private void OnMouseDown()
 	{
-		
+		/*
+
+		Debug.Log("On Mouse Down");
+
 		if (_targetColor != GlowColor) {
 			_targetColor = GlowColor;
 
@@ -42,20 +46,87 @@ public class GlowObject : MonoBehaviour
 			_targetColor = Color.black;
 		}
 		enabled = true;
+*/
+
 	}
 
 
 
 	private void HandleClick()
 	{
-		if (_targetColor != GlowColor) {
+		/*
+		 if (_targetColor != GlowColor) {
 			_targetColor = GlowColor;
 
 		} else if(_targetColor != Color.black){
 			_targetColor = Color.black;
 		}
 		enabled = true;
+*/
 	}
+
+
+
+	public void ActiveGlow()
+	{
+
+		Debug.Log("Active Glow");
+
+		if (_targetColor != GlowClickColor) {
+
+			if (_targetColor != GlowColor) {
+				_targetColor = GlowColor;
+
+			} else if (_targetColor != Color.black) {
+				_targetColor = Color.black;
+			}
+		}
+		enabled = true;
+	}
+
+
+	public void ActiveClickGlow()
+	{
+
+		Debug.Log("Active Click Glow");
+
+		if (_targetColor != GlowClickColor) {
+			_targetColor = GlowClickColor;
+
+		} else {
+			_targetColor = GlowColor;
+		}
+
+		enabled = true;
+	}
+
+
+
+	public void DActiveOutGlow()
+	{
+
+		Debug.Log("Desactive All Glow");
+
+		if (_targetColor != GlowClickColor) {
+			_targetColor = Color.black;
+		} 
+			
+
+		enabled = true;
+	}
+
+
+	public void DActiveAllGlow()
+	{
+
+		Debug.Log("Desactive All Glow");
+
+		_targetColor = Color.black;
+
+		enabled = true;
+	}
+
+
 
 	/*
 	 private void OnMouseExit()

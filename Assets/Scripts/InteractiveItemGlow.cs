@@ -5,16 +5,15 @@ namespace VRStandardAssets.Examples
 {
     // This script is a simple example of how an interactive item can
     // be used to change things on gameobjects by handling events.
-    public class ExampleInteractiveItem : MonoBehaviour
+    public class InteractiveItemGlow : MonoBehaviour
     {
         [SerializeField] private Material m_NormalMaterial;                
         [SerializeField] private Material m_OverMaterial;                  
         [SerializeField] private Material m_ClickedMaterial;               
         [SerializeField] private Material m_DoubleClickedMaterial;         
-        [SerializeField] private VRInteractiveItem m_InteractiveItem;
+        [SerializeField] private VRInteractiveItemGlow m_InteractiveItem;
         [SerializeField] private Renderer m_Renderer;
 		[SerializeField] private GlowObject gObject;
-		[SerializeField] private VRInput input;
 
 
 		public Color GlowColor;
@@ -33,8 +32,6 @@ namespace VRStandardAssets.Examples
             m_InteractiveItem.OnOut += HandleOut;
             m_InteractiveItem.OnClick += HandleClick;
             m_InteractiveItem.OnDoubleClick += HandleDoubleClick;
-			input.OnCancel += HadleCancel;
-
         }
 
 
@@ -51,12 +48,9 @@ namespace VRStandardAssets.Examples
         private void HandleOver()
         {
 			
-		
 			gObject.ActiveGlow ();
 
-			enabled = true;
-
-            Debug.Log("Show over state #");
+            Debug.Log("Show over state");
           //  m_Renderer.material = m_OverMaterial;
         }
 
@@ -64,7 +58,8 @@ namespace VRStandardAssets.Examples
         //Handle the Out event
         private void HandleOut()
         {
-			gObject.DActiveOutGlow ();
+
+			gObject.ActiveGlow ();
 
             Debug.Log("Show out state");
           //  m_Renderer.material = m_NormalMaterial;
@@ -76,21 +71,16 @@ namespace VRStandardAssets.Examples
         {
 			gObject.ActiveClickGlow ();
             Debug.Log("Show click state");
-          //  m_Renderer.material = m_ClickedMaterial;
+           // m_Renderer.material = m_ClickedMaterial;
         }
-
-
-		private void HadleCancel(){
-
-			gObject.DActiveOutGlow ();
-		}
 
 
         //Handle the DoubleClick event
         private void HandleDoubleClick()
         {
+			gObject.ActiveGlow ();
             Debug.Log("Show double click");
-           // m_Renderer.material = m_DoubleClickedMaterial;
+          //  m_Renderer.material = m_DoubleClickedMaterial;
         }
     }
 
