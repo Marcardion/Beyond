@@ -44,10 +44,15 @@ public class Ship_Manager : MonoBehaviour {
 
 	private void DeselectUnit()
 	{
-		selected_unit = null;
-		unit_movement = null;
-		reticle.UseNormal = false;
-		reticle_center.enabled = false;
+		if (selected_unit != null) 
+		{
+			selected_unit.GetComponent<GlowObject> ().DActiveAllGlow ();
+			selected_unit = null;
+			unit_movement = null;
+			reticle.UseNormal = false;
+			reticle_center.enabled = false;
+
+		}
 	}
 
 	public void MoveUnitTo(Transform next_target)
