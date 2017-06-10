@@ -7,7 +7,6 @@ public class UnitInteraction : MonoBehaviour
 {   
     private VRInteractiveItem m_InteractiveItem;
 	private Ship_Manager player_ship;
-	[SerializeField] private GlowObject gObject;
 
     private void Awake ()
     {
@@ -43,16 +42,12 @@ public class UnitInteraction : MonoBehaviour
         private void HandleOver()
         {
 			Debug.Log ("Over");
-			gObject.ActiveGlow ();
-
-			enabled = true;
         }
 
 
         //Handle the Out event
         private void HandleOut()
         {
-			gObject.DActiveOutGlow ();
         }
 
 
@@ -60,7 +55,6 @@ public class UnitInteraction : MonoBehaviour
         private void HandleClick()
         {
 			Debug.Log ("Hello");
-			gObject.ActiveClickGlow ();
 			player_ship.SelectUnit (this.gameObject);
         }
 		
