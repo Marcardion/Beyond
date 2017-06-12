@@ -19,13 +19,14 @@ public class UnitInteraction : MonoBehaviour
     private void Awake ()
     {
 		m_InteractiveItem = GetComponent<VRInteractiveItem> ();
-		m_Renderer.material = m_NormalMaterial;
+		m_Renderer.enabled = false;
 
     }
 
 	void Start () 
 	{
 		player_ship = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Ship_Manager> ();
+		m_Renderer.enabled = false;
 
 	}
 
@@ -52,7 +53,8 @@ public class UnitInteraction : MonoBehaviour
         private void HandleOver()
         {
 			
-		if (!isSelected) {	
+		if (!isSelected) {
+				m_Renderer.enabled = true;	
 				m_Renderer.material = m_OverMaterial;
 			}
 
@@ -65,15 +67,15 @@ public class UnitInteraction : MonoBehaviour
         private void HandleOut()
         {
 		if (!isSelected) {
-				m_Renderer.material = m_NormalMaterial;
+				m_Renderer.enabled = false;
 			}
-			selected.UpdateMaterial ();
         }
 
 
         //Handle the Click event
         private void HandleClick()
         {
+			m_Renderer.enabled = true;	
 			m_Renderer.material = m_ClickMaterial;
 			selected.UpdateMaterial ();
 			isSelected = true;
@@ -89,8 +91,7 @@ public class UnitInteraction : MonoBehaviour
 
 	public void ClearSelected()
 	{
-		m_Renderer.material = m_NormalMaterial;
-		selected.UpdateMaterial ();
+		m_Renderer.enabled = false;
 	}
 		
 }

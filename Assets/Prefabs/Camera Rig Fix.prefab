@@ -97,7 +97,6 @@ GameObject:
   - component: {fileID: 114027904839080762}
   - component: {fileID: 114864761978324138}
   - component: {fileID: 114276207577202558}
-  - component: {fileID: 114954171125404850}
   - component: {fileID: 114375901847721862}
   m_Layer: 0
   m_Name: MainCamera
@@ -452,20 +451,6 @@ MonoBehaviour:
   m_Image: {fileID: 114384743674811912}
   m_ReticleTransform: {fileID: 224251815247484468}
   m_Camera: {fileID: 4758541073373798}
---- !u!114 &114954171125404850
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1454319303749202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efc21d660b6557940a0cce1888e22fed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MenuSceneName: MainMenu
-  m_VRInput: {fileID: 114673419605481556}
-  m_VRCameraFade: {fileID: 114276207577202558}
 --- !u!114 &114989790123717530
 MonoBehaviour:
   m_ObjectHideFlags: 1

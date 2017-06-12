@@ -18,7 +18,7 @@ namespace VRStandardAssets.Maze
         private void Update()
         {
             // If the agent still has some distance to go, return.
-            if (m_Agent.remainingDistance > m_Agent.stoppingDistance)
+            if (m_Agent.remainingDistance > 0.1)
                 return;
 
             // Otherwise turn off the line renderer.

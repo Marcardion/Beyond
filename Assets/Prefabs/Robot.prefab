@@ -1146,7 +1146,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1282480877328422}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4077114422449216}
@@ -1563,7 +1563,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1401731114979708}
   m_LocalRotation: {x: -0.69766754, y: -0.11515234, z: -0.11515234, w: 0.69766754}
-  m_LocalPosition: {x: 0, y: 0.03896679, z: 0}
+  m_LocalPosition: {x: 0, y: 0.13896678, z: 0}
   m_LocalScale: {x: 3.279232, y: 3.2792344, z: 2.04575}
   m_Children: []
   m_Father: {fileID: 4487072009508548}
@@ -1769,7 +1769,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1401731114979708}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -1879,7 +1879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9eba9019e5020f41a506f8130b74fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selected: {fileID: 0}
+  selected: {fileID: 114585611280867486}
   m_NormalMaterial: {fileID: 2100000, guid: 00ce8bbe6f8905244b922b1e84e5e827, type: 2}
   m_OverMaterial: {fileID: 2100000, guid: 9c24a45049b303045ac9c3ed07211d43, type: 2}
   m_ClickMaterial: {fileID: 2100000, guid: 6b7ae751b59c0a04f893caf7930678ab, type: 2}

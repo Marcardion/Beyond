@@ -20,10 +20,10 @@ public class Unit_Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		my_agent.SetDestination (target);
+
 
 		// Colocar Animacão aqui
-		if (my_agent.velocity != Vector3.zero) {
+		if (my_agent.remainingDistance > 0.1) {
 			my_animator.SetBool ("Is_Walking", true);
 		} else 
 		{
@@ -33,6 +33,6 @@ public class Unit_Movement : MonoBehaviour {
 
 	public void SetTarget(Vector3 next_target)
 	{
-		next_target = target;
+		my_agent.SetDestination (next_target);
 	}
 }

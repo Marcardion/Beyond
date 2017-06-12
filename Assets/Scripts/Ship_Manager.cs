@@ -60,7 +60,7 @@ public class Ship_Manager : MonoBehaviour {
 	{
 		if (unit_movement != null)
 		{
-			unit_movement.target = next_target.position;
+			unit_movement.SetTarget (next_target.position);
 			selected_unit.GetComponentInChildren<AgentTrail> ().SetDestination ();
 		}
 	}
