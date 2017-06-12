@@ -5,11 +5,13 @@ using VRStandardAssets.Utils;
 
 public class UnitInteraction : MonoBehaviour
 {   
-	[SerializeField]  GameObject selected;
+	[SerializeField]  ScrollTexture selected;
 	[SerializeField] private Material m_NormalMaterial;                
 	[SerializeField] private Material m_OverMaterial;  
 	[SerializeField] private Material m_ClickMaterial; 
 	[SerializeField] private Renderer m_Renderer;
+	private bool isSelected = false;
+
 
     private VRInteractiveItem m_InteractiveItem;
 	private Ship_Manager player_ship;
@@ -49,19 +51,23 @@ public class UnitInteraction : MonoBehaviour
         //Handle the Over event
         private void HandleOver()
         {
-			if (m_Renderer.material != m_ClickMaterial) {	
+			
+		if (!isSelected) {	
 				m_Renderer.material = m_OverMaterial;
 			}
+
+			selected.UpdateMaterial ();
+
         }
 
 
         //Handle the Out event
         private void HandleOut()
         {
-		if (m_Renderer.material == m_OverMaterial) {
+		if (!isSelected) {
 				m_Renderer.material = m_NormalMaterial;
 			}
-			
+			selected.UpdateMaterial ();
         }
 
 
@@ -69,6 +75,8 @@ public class UnitInteraction : MonoBehaviour
         private void HandleClick()
         {
 			m_Renderer.material = m_ClickMaterial;
+			selected.UpdateMaterial ();
+			isSelected = true;
 
 			player_ship.SelectUnit (this.gameObject);
         }

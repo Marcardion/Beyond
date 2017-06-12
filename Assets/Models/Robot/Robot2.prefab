@@ -1745,7 +1745,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 6b7ae751b59c0a04f893caf7930678ab, type: 2}
+  - {fileID: 2100000, guid: 9c24a45049b303045ac9c3ed07211d43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1799,7 +1799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f15076fa47b63da42b849f99aaf38208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: 6b7ae751b59c0a04f893caf7930678ab, type: 2}
+  material: {fileID: 2100000, guid: 9c24a45049b303045ac9c3ed07211d43, type: 2}
   scrollVelocity: {x: 0, y: 0.3}
 --- !u!114 &114229629670133944
 MonoBehaviour:
@@ -1835,9 +1835,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9eba9019e5020f41a506f8130b74fc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selected: {fileID: 1128681588833538}
+  selected: {fileID: 114215069554645802}
   m_NormalMaterial: {fileID: 2100000, guid: 00ce8bbe6f8905244b922b1e84e5e827, type: 2}
-  m_OverMaterial: {fileID: 2100000, guid: 56cb94847a2dca7469c4e1f837cf0c1a, type: 2}
+  m_OverMaterial: {fileID: 2100000, guid: 9c24a45049b303045ac9c3ed07211d43, type: 2}
   m_ClickMaterial: {fileID: 2100000, guid: 6b7ae751b59c0a04f893caf7930678ab, type: 2}
   m_Renderer: {fileID: 23751459117095090}
 --- !u!136 &136286307604035690

@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScrollTexture : MonoBehaviour {
 
 	[Header ("Scene References")]
+
 	public Material material;
 
 	[Header("Velocity")]
@@ -18,18 +19,26 @@ public class ScrollTexture : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+		
 		scrollOffSet = Vector2.zero;
 
 		material.mainTextureOffset = scrollOffSet;
 
 	
 	}
+
+	public void UpdateMaterial(){
+
+		material = GetComponent<Renderer> ().material;
 	
+	}
+
 	// Update is called once per frame
 	void Update () {
+
 		scrollOffSet += scrollVelocity * Time.deltaTime;
 		material.mainTextureOffset = scrollOffSet;
 	}
+
 
 }
