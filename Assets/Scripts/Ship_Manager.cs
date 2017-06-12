@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using VRStandardAssets.Utils;
+using VRStandardAssets.Maze;
 
 public class Ship_Manager : MonoBehaviour {
 
@@ -59,6 +60,7 @@ public class Ship_Manager : MonoBehaviour {
 		if (unit_movement != null)
 		{
 			unit_movement.target = next_target.position;
+			selected_unit.GetComponentInChildren<AgentTrail> ().SetDestination ();
 		}
 	}
 }
