@@ -5,12 +5,20 @@ using VRStandardAssets.Utils;
 
 public class UnitInteraction : MonoBehaviour
 {   
+	[SerializeField]  GameObject selected;
+	[SerializeField] private Material m_NormalMaterial;                
+	[SerializeField] private Material m_OverMaterial;  
+	[SerializeField] private Material m_ClickMaterial; 
+	[SerializeField] private Renderer m_Renderer;
+
     private VRInteractiveItem m_InteractiveItem;
 	private Ship_Manager player_ship;
 
     private void Awake ()
     {
 		m_InteractiveItem = GetComponent<VRInteractiveItem> ();
+		m_Renderer.material = m_NormalMaterial;
+
     }
 
 	void Start () 
@@ -41,20 +49,27 @@ public class UnitInteraction : MonoBehaviour
         //Handle the Over event
         private void HandleOver()
         {
-			Debug.Log ("Over");
+			if (m_Renderer.material != m_ClickMaterial) {	
+				m_Renderer.material = m_OverMaterial;
+			}
         }
 
 
         //Handle the Out event
         private void HandleOut()
         {
+		if (m_Renderer.material == m_OverMaterial) {
+				m_Renderer.material = m_NormalMaterial;
+			}
+			
         }
 
 
         //Handle the Click event
         private void HandleClick()
         {
-			Debug.Log ("Hello");
+			m_Renderer.material = m_ClickMaterial;
+
 			player_ship.SelectUnit (this.gameObject);
         }
 		
