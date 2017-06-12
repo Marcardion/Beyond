@@ -41,6 +41,7 @@ public class Ship_Manager : MonoBehaviour {
 		unit_movement = unit.GetComponentInParent<Unit_Movement> ();
 		reticle.UseNormal = true;
 		reticle_center.enabled = true;
+		unit_movement.GetComponentInChildren<Portrait_Control> ().TurnOnPortrait ();
 	}
 
 	private void DeselectUnit()
@@ -48,6 +49,7 @@ public class Ship_Manager : MonoBehaviour {
 		if (selected_unit != null) 
 		{
 			selected_unit.GetComponent<UnitInteraction> ().ClearSelected ();
+			unit_movement.GetComponentInChildren<Portrait_Control> ().TurnOffPortrait ();
 			selected_unit = null;
 			unit_movement = null;
 			reticle.UseNormal = false;

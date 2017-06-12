@@ -8,8 +8,6 @@ public class Unit_Movement : MonoBehaviour {
 	private NavMeshAgent my_agent;
 	private Animator my_animator;
 
-	public Vector3 target;
-
 	// Use this for initialization
 	void Start () {
 
@@ -19,8 +17,6 @@ public class Unit_Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
 
 		// Colocar Animacão aqui
 		if (my_agent.remainingDistance > 0.1) {
