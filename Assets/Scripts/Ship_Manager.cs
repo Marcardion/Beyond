@@ -47,6 +47,7 @@ public class Ship_Manager : MonoBehaviour {
 	{
 		if (selected_unit != null) 
 		{
+			selected_unit.GetComponent<UnitInteraction> ().ClearSelected ();
 			selected_unit = null;
 			unit_movement = null;
 			reticle.UseNormal = false;

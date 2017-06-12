@@ -86,5 +86,11 @@ public class UnitInteraction : MonoBehaviour
         {
            
         }
+
+	public void ClearSelected()
+	{
+		m_Renderer.material = m_NormalMaterial;
+		selected.UpdateMaterial ();
+	}
 		
 }
