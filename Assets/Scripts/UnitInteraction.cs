@@ -10,6 +10,7 @@ public class UnitInteraction : MonoBehaviour
 	[SerializeField] private Material m_OverMaterial;  
 	[SerializeField] private Material m_ClickMaterial; 
 	[SerializeField] private Renderer m_Renderer;
+	[SerializeField] private HUD_Control m_HUD;
 	private bool isSelected = false;
 
 
@@ -60,15 +61,18 @@ public class UnitInteraction : MonoBehaviour
 
 			selected.UpdateMaterial ();
 
+			m_HUD.TurnOnTooltip ();
         }
 
 
         //Handle the Out event
         private void HandleOut()
         {
-		if (!isSelected) {
+			if (!isSelected) {
 				m_Renderer.enabled = false;
 			}
+
+			m_HUD.TurnOffTooltip ();
         }
 
 

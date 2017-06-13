@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Portrait_Control: MonoBehaviour {
+public class HUD_Control: MonoBehaviour {
 
 	private Transform cameraRig;
 	private Renderer portraitRenderer;
+	[SerializeField] private GameObject tooltip;
 
 	// Use this for initialization
 	void Start () {
@@ -31,5 +32,15 @@ public class Portrait_Control: MonoBehaviour {
 	public void TurnOffPortrait()
 	{
 		portraitRenderer.enabled = false;
+	}
+
+	public void TurnOnTooltip()
+	{
+		tooltip.SetActive (true);
+	}
+
+	public void TurnOffTooltip()
+	{
+		tooltip.SetActive (false);
 	}
 }
