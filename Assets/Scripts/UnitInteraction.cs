@@ -60,8 +60,6 @@ public class UnitInteraction : MonoBehaviour
 			}
 
 			selected.UpdateMaterial ();
-
-			m_HUD.TurnOnTooltip ();
         }
 
 
@@ -71,8 +69,7 @@ public class UnitInteraction : MonoBehaviour
 			if (!isSelected) {
 				m_Renderer.enabled = false;
 			}
-
-			m_HUD.TurnOffTooltip ();
+			
         }
 
 

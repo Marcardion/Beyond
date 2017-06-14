@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRStandardAssets.Utils;
 
 public class HUD_Control: MonoBehaviour {
 
 	private Transform cameraRig;
 	private Renderer portraitRenderer;
 	[SerializeField] private GameObject tooltip;
+	[SerializeField] private VRInteractiveItem item;
 
 	// Use this for initialization
 	void Start () {
@@ -14,8 +16,22 @@ public class HUD_Control: MonoBehaviour {
 		cameraRig = GameObject.FindGameObjectWithTag ("CameraRig").transform;
 		portraitRenderer = GetComponentInChildren<Renderer> ();
 
-		portraitRenderer.enabled = false;
-		
+		if (portraitRenderer != null) 
+		{
+			portraitRenderer.enabled = false;
+		}
+	}
+
+	private void OnEnable()
+	{
+		item.OnOver += TurnOnTooltip;
+		item.OnOut += TurnOffTooltip;
+	}
+
+	private void OnDisable()
+	{
+		item.OnOver -= TurnOnTooltip;
+		item.OnOut -= TurnOffTooltip;
 	}
 	
 	// Update is called once per frame
