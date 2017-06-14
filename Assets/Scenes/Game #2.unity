@@ -283,6 +283,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 19ea6141459b52548a16fda2def50923, type: 2}
+    - target: {fileID: 100000, guid: 4648f52ef6cbd8b439fc72ddb5c82a3c, type: 3}
+      propertyPath: m_Name
+      value: GasStation
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4648f52ef6cbd8b439fc72ddb5c82a3c, type: 3}
   m_IsPrefabParent: 0
@@ -1328,6 +1332,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1351290827488486, guid: 75a14b606466fdc489126531e840470f, type: 2}
+      propertyPath: m_Name
+      value: GeyserCollected
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 75a14b606466fdc489126531e840470f, type: 2}
   m_IsPrefabParent: 0
@@ -1346,7 +1354,7 @@ GameObject:
   - component: {fileID: 1710524410}
   - component: {fileID: 1710524409}
   m_Layer: 0
-  m_Name: sphere
+  m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
