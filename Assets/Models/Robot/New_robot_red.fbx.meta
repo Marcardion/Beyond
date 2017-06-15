@@ -193,7 +193,7 @@ ModelImporter:
     13700004: robot_body
     13700006: robot_hips
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

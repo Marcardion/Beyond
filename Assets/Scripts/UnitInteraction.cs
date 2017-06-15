@@ -93,6 +93,7 @@ public class UnitInteraction : MonoBehaviour
 	public void ClearSelected()
 	{
 		m_Renderer.enabled = false;
+		isSelected = false;
 	}
 		
 }
