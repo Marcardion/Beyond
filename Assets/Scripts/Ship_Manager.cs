@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,9 @@ public class Ship_Manager : MonoBehaviour {
 	private VRInput input;
 	private Reticle reticle;
 	[SerializeField] private Image reticle_center;
+
+	public Action OnSelect;
+	public Action OnDeselect;
 
 	// Use this for initialization
 	void Awake () {
@@ -28,8 +32,7 @@ public class Ship_Manager : MonoBehaviour {
 	{
 		input.OnCancel += DeselectUnit;
 	}
-
-
+		
 	private void OnDisable()
 	{
 		input.OnCancel -= DeselectUnit;
@@ -39,9 +42,13 @@ public class Ship_Manager : MonoBehaviour {
 	{
 		selected_unit = unit;
 		unit_movement = unit.GetComponentInParent<Unit_Movement> ();
-		reticle.UseNormal = true;
-		reticle_center.enabled = true;
+
 		unit_movement.GetComponentInChildren<HUD_Control> ().TurnOnPortrait ();
+
+		if (OnSelect != null)
+		{
+			OnSelect ();
+		}
 	}
 
 	private void DeselectUnit()
@@ -52,9 +59,11 @@ public class Ship_Manager : MonoBehaviour {
 			unit_movement.GetComponentInChildren<HUD_Control> ().TurnOffPortrait ();
 			selected_unit = null;
 			unit_movement = null;
-			reticle.UseNormal = false;
-			reticle_center.enabled = false;
 
+			if (OnDeselect != null)
+			{
+				OnDeselect ();
+			}
 		}
 	}
 

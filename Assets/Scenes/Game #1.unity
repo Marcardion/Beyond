@@ -2399,7 +2399,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.3, z: 0.5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!4 &522364718
 Transform:
   m_ObjectHideFlags: 0
@@ -3862,6 +3862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 840470182}
   - component: {fileID: 840470181}
+  - component: {fileID: 840470183}
   m_Layer: 0
   m_Name: Game Managers
   m_TagString: GameManager
@@ -3896,6 +3897,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &840470183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 840470180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13daac2ed1b67894db076abae2b521f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &845632503
 GameObject:
   m_ObjectHideFlags: 0
@@ -6699,6 +6711,24 @@ Transform:
   m_Father: {fileID: 250423043}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1490019030 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1787232317884802, guid: 83b61ef6aa6ad8f4587009122a89b167,
+    type: 2}
+  m_PrefabInternal: {fileID: 137866872}
+--- !u!114 &1490019033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1490019030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47678d82aac2ea14c82b5bdf4b0108bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitSelected: 0
+  reticle_center: {fileID: 2118440330}
 --- !u!1 &1490025890
 GameObject:
   m_ObjectHideFlags: 0
@@ -9447,6 +9477,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 137866872}
   m_Script: {fileID: 11500000, guid: 31957ab02a8654b448736febf48c16e9, type: 3}
+--- !u!114 &2118440330 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114384743674811912, guid: 83b61ef6aa6ad8f4587009122a89b167,
+    type: 2}
+  m_PrefabInternal: {fileID: 137866872}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &2118544224
 GameObject:
   m_ObjectHideFlags: 0
