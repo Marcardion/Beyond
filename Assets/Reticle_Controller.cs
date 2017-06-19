@@ -7,10 +7,15 @@ using VRStandardAssets.Maze;
 
 public class Reticle_Controller : MonoBehaviour {
 
-	InteractionTypes onReticleType;
+	InteractionTypes onReticleType = InteractionTypes.None;
 
-	public bool unitSelected = false;
+	[Header("Reticle Types")]
+	[SerializeField] private Sprite groundSelectReticle;
+	[SerializeField] private Sprite resourceHarvestReticle;
+	[SerializeField] private Sprite waypointReticle;
+	[SerializeField] private Sprite unitReticle;
 
+	private bool unitSelected = false;
 	private Reticle reticle;
 	[SerializeField] private Image reticle_center;
 	private Ship_Manager shipManager;
@@ -46,20 +51,73 @@ public class Reticle_Controller : MonoBehaviour {
 
 	void HandleReticle()
 	{
-		if (unitSelected)
+		Debug.Log ("Hello");
+
+		switch (onReticleType)
 		{
-			SetReticleToGroundSelect ();
-		} else
-		{
-			ResetReticle ();
+			case InteractionTypes.Resource:
+				if (unitSelected)
+				{
+					SetReticleToResourceHarvest ();
+				} else
+				{
+					ResetReticle();
+				}
+				break;
+			case InteractionTypes.Waypoint:
+				SetReticleToWaypoint ();
+				break;
+			case InteractionTypes.Unit:
+				SetReticleToUnitSelect ();
+				break;
+			case InteractionTypes.Ground:
+				if (unitSelected)
+				{
+					SetReticleToGroundSelect ();
+				} else
+				{
+					ResetReticle ();
+				}
+				break;
+			default:
+				ResetReticle ();
+				break;
 		}
+
 	}
 
 	public void SetReticleToGroundSelect()
 	{
 		reticle.UseNormal = true;
 		reticle_center.enabled = true;
+		reticle_center.sprite = groundSelectReticle;
+		reticle_center.color = new Color (104 / 255f, 233 / 255f, 30 / 255f);
 	}
+
+	public void SetReticleToWaypoint()
+	{
+		reticle.UseNormal = false;
+		reticle_center.enabled = true;
+		reticle_center.sprite = waypointReticle;
+		reticle_center.color = new Color (168 / 255f, 251 / 255f, 241 / 255f);
+	}
+
+	public void SetReticleToResourceHarvest()
+	{
+		reticle.UseNormal = false;
+		reticle_center.enabled = true;
+		reticle_center.sprite = resourceHarvestReticle;
+		reticle_center.color = new Color (250 / 255f, 251 / 255f, 168 / 255f);
+	}
+
+	public void SetReticleToUnitSelect()
+	{
+		reticle.UseNormal = false;
+		reticle_center.enabled = true;
+		reticle_center.sprite = unitReticle;
+		reticle_center.color = new Color (168 / 255f, 251 / 255f, 203 / 255f);
+	}
+
 
 	public void ResetReticle()
 	{
@@ -78,5 +136,12 @@ public class Reticle_Controller : MonoBehaviour {
 	{
 		unitSelected = false;
 		HandleReticle ();
+	}
+
+	public void SetOnReticleType (InteractionTypes type)
+	{
+			
+			onReticleType = type;
+			HandleReticle ();
 	}
 }

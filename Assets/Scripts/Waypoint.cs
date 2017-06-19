@@ -15,6 +15,8 @@ public class Waypoint : MonoBehaviour
 	[SerializeField] private Transform myCameraPosition;
 	private Transform activeCameraPosition;
 	private VRCameraFade cameraFade;
+	private Reticle_Controller reticle_ctrl;
+
 
 
     private void Awake ()
@@ -26,6 +28,8 @@ public class Waypoint : MonoBehaviour
 	{
 		cameraFade = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<VRCameraFade> ();
 		activeCameraPosition = GameObject.FindGameObjectWithTag ("CameraRig").transform;
+		reticle_ctrl = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Reticle_Controller> ();
+
 	}
 
 
@@ -50,7 +54,7 @@ public class Waypoint : MonoBehaviour
         //Handle the Over event
         private void HandleOver()
         {
-            Debug.Log("Show over state");
+			reticle_ctrl.SetOnReticleType (InteractionTypes.Waypoint);
             m_Renderer.material = m_OverMaterial;
         }
 
@@ -58,7 +62,7 @@ public class Waypoint : MonoBehaviour
         //Handle the Out event
         private void HandleOut()
         {
-            Debug.Log("Show out state");
+			reticle_ctrl.SetOnReticleType (InteractionTypes.None);
             m_Renderer.material = m_NormalMaterial;
         }
 

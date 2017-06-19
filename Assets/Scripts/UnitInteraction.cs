@@ -16,11 +16,14 @@ public class UnitInteraction : MonoBehaviour
 
     private VRInteractiveItem m_InteractiveItem;
 	private Ship_Manager player_ship;
+	private Reticle_Controller reticle_ctrl;
+
 
     private void Awake ()
     {
 		m_InteractiveItem = GetComponent<VRInteractiveItem> ();
 		m_Renderer.enabled = false;
+		reticle_ctrl = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Reticle_Controller> ();
 
     }
 
@@ -53,7 +56,7 @@ public class UnitInteraction : MonoBehaviour
         //Handle the Over event
         private void HandleOver()
         {
-			
+			reticle_ctrl.SetOnReticleType (InteractionTypes.Unit);
 		if (!isSelected) {
 				m_Renderer.enabled = true;	
 				m_Renderer.material = m_OverMaterial;

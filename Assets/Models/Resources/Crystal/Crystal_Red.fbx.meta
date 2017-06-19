@@ -36,7 +36,7 @@ ModelImporter:
     4300004: Cube.003
     4300006: Cube
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using VRStandardAssets.Utils;
 
-public class MoveToInteraction : MonoBehaviour {
+public class WalkableGround_Interaction : MonoBehaviour {
 
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 	[SerializeField] private Reticle reticle;
 	private Ship_Manager player_ship;
+	private Reticle_Controller reticle_ctrl;
 
 	// Use this for initialization
 	void Start () {
 		player_ship = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Ship_Manager> ();
+		reticle_ctrl = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Reticle_Controller> ();
 	}
 	
 	// Update is called once per frame
@@ -40,7 +42,7 @@ public class MoveToInteraction : MonoBehaviour {
 	//Handle the Over event
 	private void HandleOver()
 	{
-		
+		reticle_ctrl.SetOnReticleType (InteractionTypes.Ground);
 	}
 
 
