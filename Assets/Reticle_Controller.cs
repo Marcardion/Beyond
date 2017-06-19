@@ -16,7 +16,10 @@ public class Reticle_Controller : MonoBehaviour {
 	[SerializeField] private Sprite unitReticle;
 
 	private bool unitSelected = false;
+
+
 	private Reticle reticle;
+	[Header("Reticle")]
 	[SerializeField] private Image reticle_center;
 	private Ship_Manager shipManager;
 
@@ -51,7 +54,6 @@ public class Reticle_Controller : MonoBehaviour {
 
 	void HandleReticle()
 	{
-		Debug.Log ("Hello");
 
 		switch (onReticleType)
 		{

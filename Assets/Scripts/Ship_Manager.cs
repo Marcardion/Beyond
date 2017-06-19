@@ -20,7 +20,7 @@ public class Ship_Manager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		input = GetComponentInChildren<VRInput> ();
-		reticle = GetComponentInChildren<Reticle> ();
+		//reticle = GetComponentInChildren<Reticle> ();
 	}
 	
 	// Update is called once per frame
@@ -73,6 +73,17 @@ public class Ship_Manager : MonoBehaviour {
 		{
 			unit_movement.SetTarget (next_target.position);
 			selected_unit.GetComponentInChildren<AgentTrail> ().SetDestination ();
+			selected_unit.GetComponentInParent<Unit_Controller> ().SetCollectionFlag (false);
+			selected_unit.GetComponentInParent<Unit_Controller> ().ChangeUnitState(Unit_State.Moving);
+		}
+	}
+
+	public void StartExtraction(Transform location)
+	{
+		if (selected_unit != null) 
+		{
+			MoveUnitTo (location);
+			selected_unit.GetComponentInParent<Unit_Controller> ().SetCollectionFlag (true);
 		}
 	}
 }

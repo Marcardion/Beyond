@@ -114,6 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4725127641558564}
   - component: {fileID: 114036480681228018}
+  - component: {fileID: 114259749945340512}
   m_Layer: 0
   m_Name: Camera Rig Fix
   m_TagString: CameraRig
@@ -264,6 +265,24 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 15
+--- !u!114 &114259749945340512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787232317884802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47678d82aac2ea14c82b5bdf4b0108bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundSelectReticle: {fileID: 21300000, guid: c0136c6c5ecb3174ba458cb21b3816e8,
+    type: 3}
+  resourceHarvestReticle: {fileID: 21300000, guid: 66746df6ffe9c554bbe8d2be51e8b9b6,
+    type: 3}
+  waypointReticle: {fileID: 21300000, guid: bd8e0a8020c3ca447b11439323d123a6, type: 3}
+  unitReticle: {fileID: 21300000, guid: d8479dbf587e43545ae8a89f3c1f5fc4, type: 3}
+  reticle_center: {fileID: 114384743674811912}
 --- !u!114 &114276207577202558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,7 +298,7 @@ MonoBehaviour:
   m_DefaultSnapshot: {fileID: 24500003, guid: d87b47ce31deb1f44bbe100832f18eb4, type: 2}
   m_FadedSnapshot: {fileID: 24515028, guid: d87b47ce31deb1f44bbe100832f18eb4, type: 2}
   m_FadeColor: {r: 0, g: 0, b: 0, a: 1}
-  m_FadeDuration: 2
+  m_FadeDuration: 1.5
   m_FadeInOnSceneLoad: 1
   m_FadeInOnStart: 1
 --- !u!114 &114372568522165938
@@ -301,7 +320,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ec5612837e697404da7f325fce4fab1c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57e5dedb999b8d84eb7036ce9b14d0a3, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -326,20 +345,20 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1232616561808176}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 2100000, guid: 3264d49bcc9a5994baec39653f84c21e, type: 2}
-  m_Color: {r: 0.40862745, g: 0.9137255, b: 0.11764703, a: 1}
+  m_Color: {r: 0.6592777, g: 0.9852941, b: 0.7964294, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 32cf16c6e0bdf2341a297f9a97b8aeae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d8479dbf587e43545ae8a89f3c1f5fc4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -366,7 +385,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ec5612837e697404da7f325fce4fab1c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 57e5dedb999b8d84eb7036ce9b14d0a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

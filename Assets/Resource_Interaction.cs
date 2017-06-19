@@ -7,10 +7,12 @@ public class Resource_Interaction : MonoBehaviour {
 
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 	private Reticle_Controller reticle_ctrl;
+	private Ship_Manager player_ship;
 
 	// Use this for initialization
 	void Start () {
 		reticle_ctrl = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Reticle_Controller> ();
+		player_ship = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Ship_Manager> ();
 	}
 	
 	// Update is called once per frame
@@ -52,7 +54,7 @@ public class Resource_Interaction : MonoBehaviour {
 	//Handle the Click event
 	private void HandleClick()
 	{
-		
+		player_ship.StartExtraction (this.transform);
 	}
 
 
