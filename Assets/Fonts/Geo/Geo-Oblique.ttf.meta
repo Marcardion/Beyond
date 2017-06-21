@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e18880f81563e224d896b17633a98b8e
+timeCreated: 1498011750
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Geo
+  fontNames:
+  - Geo
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 518f3109387f46d448c31450ee560b81, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
