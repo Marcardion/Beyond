@@ -20,12 +20,16 @@ public class Unit_Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		// Colocar Animacão aqui
-		if (my_agent.remainingDistance > 0.1) {
-			my_animator.SetBool ("Is_Walking", true);
-		} else 
+		if (my_controller.myState == Unit_State.Moving)
 		{
-			my_animator.SetBool ("Is_Walking", false);
+			// Colocar Animacão aqui
+			if (my_agent.remainingDistance > 0.1)
+			{
+				my_animator.SetBool ("Is_Walking", true);
+			} else
+			{
+				my_animator.SetBool ("Is_Walking", false);
+			}
 		}
 	}
 

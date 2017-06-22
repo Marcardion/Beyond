@@ -1,20 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Resource_Controller : MonoBehaviour {
-
-	[SerializeField] GameObject parent;
 
 	private bool active = true;
 	private bool beingCollected = false;
 	private bool collection_ended = false;
 
-	public Renderer[] models;
+	private Renderer[] models;
+
+	private GameObject unitCollecting;
+
+	private Resource_Info myInfo;
 
 	// Use this for initialization
 	void Start () {
 		models = GetComponentsInChildren<MeshRenderer> ();
+		myInfo = GetComponent<Resource_Info> ();
 	}
 	
 	// Update is called once per frame
@@ -33,9 +37,8 @@ public class Resource_Controller : MonoBehaviour {
 
 				if (check_flag == true && beingCollected == false)
 				{
-					col.GetComponent<Unit_Controller> ().ChangeUnitState (Unit_State.Collecting);
-					beingCollected = true;
-					StartCoroutine (StartCollecting ());
+					unitCollecting = col.gameObject;
+					SetupCollecting ();
 				}
 			}
 		}
@@ -47,13 +50,16 @@ public class Resource_Controller : MonoBehaviour {
 		{
 			if (col.CompareTag ("Unit"))
 			{
-
-				bool check_flag = col.GetComponent<Unit_Controller> ().GetCollectionFlag ();
-
-				if (check_flag)
+				if (col.gameObject == unitCollecting)
 				{
-					col.GetComponent<Unit_Controller> ().SetCollectionFlag (false);
-					beingCollected = false;
+					bool check_flag = col.GetComponent<Unit_Controller> ().GetCollectionFlag ();
+
+					if (check_flag)
+					{
+						unitCollecting.GetComponent<Unit_Controller> ().SetCollectionFlag (false);
+						beingCollected = false;
+						unitCollecting = null;
+					}
 				}
 			}
 		}
@@ -61,21 +67,25 @@ public class Resource_Controller : MonoBehaviour {
 
 	IEnumerator StartCollecting()
 	{
+		Debug.Log ("Start");
 		float timer = 0;
 
 		while (beingCollected == true && collection_ended == false)
 		{
+			Debug.Log ("Enter");
 			timer += Time.deltaTime;
-			if (timer >= 5)
+
+			if (timer >= 5f)
 			{
-				collection_ended = true;
-				active = false;
+				Debug.Log ("Hello");
+				EndCollecting ();
 			}
 
-			yield return new WaitForEndOfFrame();
+			yield return new WaitForFixedUpdate ();
 		}
 
-		StartCoroutine (FadeAndDestroy ());
+		Debug.Log ("End");
+
 	}
 
 	IEnumerator FadeAndDestroy()
@@ -110,6 +120,50 @@ public class Resource_Controller : MonoBehaviour {
 
 		yield return new WaitForSeconds (1f);
 
-		Destroy (parent.gameObject);
+		Destroy (this.gameObject);
+	}
+
+	void CopyResource()
+	{
+		unitCollecting.AddComponent<Resource_Info> ();
+		unitCollecting.GetComponent<Resource_Info> ().SetAmmount (myInfo.GetAmmount());
+		unitCollecting.GetComponent<Resource_Info> ().SetType (myInfo.GetType());
+		unitCollecting.GetComponentInParent<NavMeshAgent> ().isStopped = false;
+	}
+
+	void SetupCollecting()
+	{
+		StartUnit ();
+
+		beingCollected = true;
+		StartCoroutine (StartCollecting ());
+	}
+
+	void EndCollecting()
+	{
+		ResetUnit ();
+
+		CopyResource ();
+		collection_ended = true;
+		active = false;
+		unitCollecting = null;
+		StartCoroutine (FadeAndDestroy ());
+	}
+
+	void ResetUnit()
+	{
+		unitCollecting.GetComponent<Unit_Controller> ().ChangeUnitState (Unit_State.Idle);
+		unitCollecting.GetComponentInParent<NavMeshAgent> ().isStopped = false;
+		unitCollecting.transform.localRotation = Quaternion.Euler (0, 0, 0);
+		unitCollecting.GetComponentInParent<Animator> ().SetBool ("Is_Collecting", false);
+	}
+
+	void StartUnit()
+	{
+		unitCollecting.GetComponent<Unit_Controller> ().ChangeUnitState (Unit_State.Collecting);
+		unitCollecting.GetComponentInParent<NavMeshAgent> ().isStopped = true;
+		unitCollecting.transform.LookAt (this.transform);
+		unitCollecting.GetComponentInParent<Animator> ().SetBool ("Is_Collecting", true);
+
 	}
 }
