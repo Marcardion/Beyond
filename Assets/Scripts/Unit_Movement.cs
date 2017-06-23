@@ -25,7 +25,9 @@ public class Unit_Movement : MonoBehaviour {
 			if (my_agent.remainingDistance > 0.1 && my_agent.isStopped == false)
 			{
 				my_animator.SetBool ("Is_Walking", true);
+			if (my_controller.myState == Unit_State.Idle) {
 				my_controller.ChangeUnitState (Unit_State.Moving);
+				}
 			} else
 			{
 				my_animator.SetBool ("Is_Walking", false);

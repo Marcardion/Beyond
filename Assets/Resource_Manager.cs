@@ -59,7 +59,7 @@ public class Resource_Manager : MonoBehaviour
 		
 	public void IncreaseBiomass(int numBiomass)
 	{
-		biomassCounter += biomassCounter;
+		biomassCounter += numBiomass;
 		if (biomassCounter > resourceLimit) 
 		{
 			biomassCounter = resourceLimit;
@@ -69,7 +69,7 @@ public class Resource_Manager : MonoBehaviour
 
 	public void DecreaseBiomass(int numBiomass)
 	{
-		biomassCounter -= biomassCounter;
+		biomassCounter -= numBiomass;
 		CallUpdate ();
 	}
 

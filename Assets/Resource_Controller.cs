@@ -137,7 +137,7 @@ public class Resource_Controller : MonoBehaviour {
 	void EndCollecting()
 	{
 		ResetUnit ();
-
+		SetCarrying ();
 		CopyResource ();
 		collection_ended = true;
 		active = false;
@@ -160,5 +160,12 @@ public class Resource_Controller : MonoBehaviour {
 		unitCollecting.transform.LookAt (this.transform);
 		unitCollecting.GetComponentInParent<Animator> ().SetBool ("Is_Collecting", true);
 
+	}
+
+	void SetCarrying()
+	{
+		unitCollecting.GetComponent<Unit_Controller> ().ChangeUnitState (Unit_State.Carrying);
+		unitCollecting.GetComponent<Unit_Controller> ().SetOnItem (myInfo.GetType ());
+		unitCollecting.GetComponentInParent<Animator> ().SetBool ("Is_Carrying", true);
 	}
 }

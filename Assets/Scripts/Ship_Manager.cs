@@ -72,7 +72,9 @@ public class Ship_Manager : MonoBehaviour {
 			unit_movement.SetTarget (next_target.position);
 			selected_unit.GetComponentInChildren<AgentTrail> ().SetDestination ();
 			selected_unit.GetComponentInParent<Unit_Controller> ().SetCollectionFlag (false);
-			selected_unit.GetComponentInParent<Unit_Controller> ().ChangeUnitState(Unit_State.Moving);
+			if (selected_unit.GetComponentInParent<Unit_Controller> ().myState == Unit_State.Collecting) {
+				selected_unit.GetComponentInParent<Unit_Controller> ().ChangeUnitState (Unit_State.Moving);
+			}
 			unit_movement.SetStop (false);
 		}
 	}
