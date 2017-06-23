@@ -20,21 +20,29 @@ public class Unit_Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (my_controller.myState == Unit_State.Moving)
-		{
+	
 			// Colocar Animacão aqui
-			if (my_agent.remainingDistance > 0.1)
+			if (my_agent.remainingDistance > 0.1 && my_agent.isStopped == false)
 			{
 				my_animator.SetBool ("Is_Walking", true);
+				my_controller.ChangeUnitState (Unit_State.Moving);
 			} else
 			{
 				my_animator.SetBool ("Is_Walking", false);
+				if (my_controller.myState == Unit_State.Moving)
+				{
+					my_controller.ChangeUnitState (Unit_State.Idle);
+				}
 			}
-		}
 	}
 
 	public void SetTarget(Vector3 next_target)
 	{
 		my_agent.SetDestination (next_target);
+	}
+
+	public void SetStop(bool mode)
+	{
+		my_agent.isStopped = mode;
 	}
 }

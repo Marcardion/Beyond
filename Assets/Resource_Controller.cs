@@ -52,14 +52,9 @@ public class Resource_Controller : MonoBehaviour {
 			{
 				if (col.gameObject == unitCollecting)
 				{
-					bool check_flag = col.GetComponent<Unit_Controller> ().GetCollectionFlag ();
-
-					if (check_flag)
-					{
-						unitCollecting.GetComponent<Unit_Controller> ().SetCollectionFlag (false);
+						ResetUnit ();
 						beingCollected = false;
 						unitCollecting = null;
-					}
 				}
 			}
 		}

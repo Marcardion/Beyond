@@ -11,7 +11,6 @@ public class Ship_Manager : MonoBehaviour {
 	private GameObject selected_unit;
 	private Unit_Movement unit_movement;
 	private VRInput input;
-	private Reticle reticle;
 	[SerializeField] private Image reticle_center;
 
 	public Action OnSelect;
@@ -20,7 +19,6 @@ public class Ship_Manager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		input = GetComponentInChildren<VRInput> ();
-		//reticle = GetComponentInChildren<Reticle> ();
 	}
 	
 	// Update is called once per frame
@@ -75,6 +73,7 @@ public class Ship_Manager : MonoBehaviour {
 			selected_unit.GetComponentInChildren<AgentTrail> ().SetDestination ();
 			selected_unit.GetComponentInParent<Unit_Controller> ().SetCollectionFlag (false);
 			selected_unit.GetComponentInParent<Unit_Controller> ().ChangeUnitState(Unit_State.Moving);
+			unit_movement.SetStop (false);
 		}
 	}
 
