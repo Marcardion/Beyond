@@ -35,7 +35,7 @@ public class Resource_Controller : MonoBehaviour {
 			
 				bool check_flag = col.GetComponent<Unit_Controller> ().GetCollectionFlag ();
 
-				if (check_flag == true && beingCollected == false)
+				if (check_flag == true && beingCollected == false && col.GetComponent<Unit_Controller>().myState != Unit_State.Carrying)
 				{
 					unitCollecting = col.gameObject;
 					SetupCollecting ();
