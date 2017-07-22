@@ -76,10 +76,6 @@ public class Waypoint : MonoBehaviour
 			{
 				StartCoroutine (cameraFade.BeginFadeOut (true));
 				cameraFade.OnFadeComplete += StartTeleport;
-			} else if (m_Type == MovementType.LinearMovement)
-			{
-				StartCoroutine (LinearMovement ());	
-				m_Renderer.enabled = false;
 			}
         }
 		
@@ -95,22 +91,5 @@ public class Waypoint : MonoBehaviour
 			activeCameraPosition.rotation = myCameraPosition.rotation;
 			cameraFade.OnFadeComplete -= StartTeleport;
 			StartCoroutine (cameraFade.BeginFadeIn (true));	
-		}
-
-		private IEnumerator LinearMovement()
-		{
-			float remaining_distance = 0;
-
-			remaining_distance = Vector3.Distance (activeCameraPosition.position, myCameraPosition.position);
-
-			while (remaining_distance >= 0.5)
-			{
-				activeCameraPosition.position = Vector3.Lerp (activeCameraPosition.position, myCameraPosition.position, Time.deltaTime*0.4f);
-				remaining_distance = Vector3.Distance (activeCameraPosition.position, myCameraPosition.position);
-				yield return new WaitForFixedUpdate ();
-			}
-
-			activeCameraPosition.position = myCameraPosition.position;
-			m_Renderer.enabled = true;
 		}
 }

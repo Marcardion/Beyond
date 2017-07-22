@@ -1,24 +1,36 @@
 fileFormatVersion: 2
-guid: 0fca51ac713b15d4eb673d378ea7fa80
-timeCreated: 1498610834
+guid: eb9e05fc416c299498d8649617ae09e9
+timeCreated: 1500749054
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
+    100000: Camera
+    100002: Cube
     100004: //RootNode
-    400000: Cube
-    400002: Cube_001
+    100006: drone
+    100008: Lamp
+    100010: Lamp.001
+    100012: Lamp.002
+    100014: Lamp.003
+    100016: Lamp.004
+    100018: Lamp.005
+    400000: Camera
+    400002: Cube
     400004: //RootNode
+    400006: drone
+    400008: Lamp
+    400010: Lamp.001
+    400012: Lamp.002
+    400014: Lamp.003
+    400016: Lamp.004
+    400018: Lamp.005
     2300000: Cube
-    2300002: Cube_001
+    2300002: drone
     3300000: Cube
-    3300002: Cube_001
-    4300000: Cube_001
-    4300002: Cube
-    7400000: Default Take
-    9500000: //RootNode
+    3300002: drone
+    4300000: Cube
+    4300002: drone
   materials:
     importMaterials: 0
     materialName: 0
@@ -45,7 +57,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 0.2
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -83,7 +95,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
