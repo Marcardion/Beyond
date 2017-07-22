@@ -20,6 +20,11 @@ public class HUD_Control: MonoBehaviour {
 		{
 			portraitRenderer.enabled = false;
 		}
+
+		if (tooltip != null) 
+		{
+			TurnOffTooltip ();
+		}
 	}
 
 	private void OnEnable()
