@@ -1,24 +1,41 @@
 fileFormatVersion: 2
-guid: 0fca51ac713b15d4eb673d378ea7fa80
-timeCreated: 1498610834
+guid: b6963bba1d22737488c30b6f45327fab
+timeCreated: 1500750996
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cube_001
-    100004: //RootNode
-    400000: Cube
-    400002: Cube_001
-    400004: //RootNode
-    2300000: Cube
-    2300002: Cube_001
-    3300000: Cube
-    3300002: Cube_001
-    4300000: Cube_001
-    4300002: Cube
-    7400000: Default Take
-    9500000: //RootNode
+    100000: base
+    100002: cadeira
+    100004: cadeira perna
+    100006: Camera
+    100008: //RootNode
+    100010: Lamp
+    100012: teto
+    100014: volante
+    400000: base
+    400002: cadeira
+    400004: cadeira perna
+    400006: Camera
+    400008: //RootNode
+    400010: Lamp
+    400012: teto
+    400014: volante
+    2300000: base
+    2300002: cadeira
+    2300004: cadeira perna
+    2300006: teto
+    2300008: volante
+    3300000: base
+    3300002: cadeira
+    3300004: cadeira perna
+    3300006: teto
+    3300008: volante
+    4300000: cadeira
+    4300002: cadeira perna
+    4300004: teto
+    4300006: volante
+    4300008: base
   materials:
     importMaterials: 0
     materialName: 0
@@ -45,7 +62,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -83,7 +100,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

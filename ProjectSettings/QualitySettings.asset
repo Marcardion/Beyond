@@ -63,7 +63,7 @@ QualitySettings:
     pixelLightCount: 1
     shadows: 1
     shadowResolution: 0
-    shadowProjection: 0
+    shadowProjection: 1
     shadowCascades: 1
     shadowDistance: 20
     shadowNearPlaneOffset: 3
@@ -75,9 +75,9 @@ QualitySettings:
     antiAliasing: 4
     softParticles: 0
     softVegetation: 0
-    realtimeReflectionProbes: 1
+    realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 1
-    vSyncCount: 1
+    vSyncCount: 0
     lodBias: 0.7
     maximumLODLevel: 0
     particleRaycastBudget: 64
