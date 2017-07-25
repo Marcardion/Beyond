@@ -3498,6 +3498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 652056961}
   - component: {fileID: 652056962}
+  - component: {fileID: 652056963}
   m_Layer: 0
   m_Name: ship_wrap
   m_TagString: Untagged
@@ -3546,6 +3547,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &652056963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652056960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81c2c677f2746a4fb75ccd24027693a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractiveItem: {fileID: 1951086416}
+  scene_name: Game Tutorial
+  my_animator: {fileID: 652056962}
 --- !u!1 &662519001
 GameObject:
   m_ObjectHideFlags: 0

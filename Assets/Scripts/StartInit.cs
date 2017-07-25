@@ -67,7 +67,7 @@ public class StartInit : MonoBehaviour {
 	public void InitLoadNextScene(float theValue){
 
 		StartCoroutine (cameraFade.BeginFadeIn (true));	
-
+		LoadNextScene ();
 		cameraFade.OnFadeComplete += LoadNextScene;
 
 	}
