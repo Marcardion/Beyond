@@ -13,6 +13,11 @@ public class Ship_Manager : MonoBehaviour {
 	private VRInput input;
 	[SerializeField] private Image reticle_center;
 
+	[Header("AudioClips")]
+	[SerializeField] private AudioClip select_clip;
+	[SerializeField] private AudioClip deselect_clip;
+	[SerializeField] private AudioClip move_clip;
+
 	public Action OnSelect;
 	public Action OnDeselect;
 
@@ -42,6 +47,7 @@ public class Ship_Manager : MonoBehaviour {
 		unit_movement = unit.GetComponentInParent<Unit_Movement> ();
 
 		unit_movement.GetComponentInChildren<HUD_Control> ().TurnOnPortrait ();
+		SoundManager.instance.PlaySingle (select_clip, 0);
 
 		if (OnSelect != null)
 		{
@@ -57,6 +63,9 @@ public class Ship_Manager : MonoBehaviour {
 			unit_movement.GetComponentInChildren<HUD_Control> ().TurnOffPortrait ();
 			selected_unit = null;
 			unit_movement = null;
+
+			SoundManager.instance.PlaySingle (deselect_clip, 0);
+
 
 			if (OnDeselect != null)
 			{
@@ -76,6 +85,8 @@ public class Ship_Manager : MonoBehaviour {
 				selected_unit.GetComponentInParent<Unit_Controller> ().ChangeUnitState (Unit_State.Moving);
 			}
 			unit_movement.SetStop (false);
+
+			SoundManager.instance.PlaySingle (move_clip, 0);
 		}
 	}
 

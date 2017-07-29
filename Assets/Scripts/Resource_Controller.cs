@@ -15,6 +15,8 @@ public class Resource_Controller : MonoBehaviour {
 
 	private Resource_Info myInfo;
 
+	[SerializeField] private AudioClip collect_clip;
+
 	// Use this for initialization
 	void Start () {
 		models = GetComponentsInChildren<MeshRenderer> ();
@@ -142,6 +144,7 @@ public class Resource_Controller : MonoBehaviour {
 		collection_ended = true;
 		active = false;
 		unitCollecting = null;
+		SoundManager.instance.PlaySingle (collect_clip, 0);
 		StartCoroutine (FadeAndDestroy ());
 	}
 

@@ -6,7 +6,7 @@ public class Base_Controller : MonoBehaviour {
 
 	private Resource_Manager resourceManager;
 
-
+	[SerializeField] private AudioClip deliver_clip;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +28,7 @@ public class Base_Controller : MonoBehaviour {
 					col.gameObject.GetComponent<Unit_Controller> ().SetOffItem (col.gameObject.GetComponent<Resource_Info> ().GetType ());
 					col.gameObject.GetComponent<Unit_Controller> ().ChangeUnitState (Unit_State.Idle);
 					col.gameObject.GetComponent<Animator> ().SetBool ("Is_Carrying", false);
+					SoundManager.instance.PlaySingle (deliver_clip, 0);
 				}
 			}
 	}
@@ -37,7 +38,6 @@ public class Base_Controller : MonoBehaviour {
 		switch (info.GetType ()) 
 		{
 		case ResourceType.Biomass:
-			Debug.Log ("Hello");
 			resourceManager.IncreaseBiomass (info.GetAmmount());
 			break;
 		case ResourceType.Gas:

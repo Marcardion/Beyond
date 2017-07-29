@@ -23,7 +23,7 @@ public class HUD_Control: MonoBehaviour {
 
 		if (tooltip != null) 
 		{
-			TurnOffTooltip ();
+			DisableTooltip ();
 		}
 	}
 
@@ -48,20 +48,30 @@ public class HUD_Control: MonoBehaviour {
 	public void TurnOnPortrait()
 	{
 		portraitRenderer.enabled = true;
+		portraitRenderer.gameObject.GetComponent<Animator> ().SetBool ("Active", true);
 	}
 
 	public void TurnOffPortrait()
 	{
-		portraitRenderer.enabled = false;
+		portraitRenderer.gameObject.GetComponent<Animator> ().SetBool ("Active", false);
+		//portraitRenderer.enabled = false;
 	}
 
 	public void TurnOnTooltip()
 	{
 		tooltip.SetActive (true);
+		tooltip.GetComponent<Animator> ().SetBool ("Active", true);
 	}
 
 	public void TurnOffTooltip()
 	{
+		//tooltip.SetActive (false);
+		tooltip.GetComponent<Animator> ().SetBool ("Active", false);
+	}
+
+	public void DisableTooltip()
+	{
 		tooltip.SetActive (false);
 	}
+	//TODO IMPLEMENTAR UM METODO PARA DESLIGAR OS HUD PARA MELHORAR PERFORMANCE
 }

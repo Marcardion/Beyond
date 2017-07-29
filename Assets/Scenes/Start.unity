@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.14356905, g: 0.13048789, b: 0.24692288, a: 1}
+  m_IndirectSpecularColor: {r: 0.16955099, g: 0.15445918, b: 0.2914887, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -86,7 +86,7 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: 30552b8aa6a8ee443886e5c95f1e038b,
+  m_LightingDataAsset: {fileID: 112000002, guid: 3440b6f33d165954181f1eb04dbedc3e,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -3565,7 +3565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractiveItem: {fileID: 1951086416}
-  scene_name: Game Tutorial
+  scene_name: New Game Tutorial
   my_animator: {fileID: 652056962}
 --- !u!1 &662519001
 GameObject:
@@ -14417,7 +14417,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1880336220}
-  - component: {fileID: 1880336219}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -14425,20 +14424,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1880336219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1880336218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e81c2c677f2746a4fb75ccd24027693a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_InteractiveItem: {fileID: 1951086416}
-  scene_name: Game Tutorial
-  my_animator: {fileID: 652056962}
 --- !u!4 &1880336220
 Transform:
   m_ObjectHideFlags: 0
