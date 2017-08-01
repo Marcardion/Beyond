@@ -18,8 +18,6 @@ public class StartInit : MonoBehaviour {
 	void Start()
 	{
 		cameraFade = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<VRCameraFade> ();
-		cameraFade = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<VRCameraFade> ();
-
 	}
 
 
@@ -66,8 +64,8 @@ public class StartInit : MonoBehaviour {
 
 	public void InitLoadNextScene(float theValue){
 
-		StartCoroutine (cameraFade.BeginFadeIn (true));	
-		LoadNextScene ();
+		StartCoroutine (cameraFade.BeginFadeOut (true));	
+		//LoadNextScene ();
 		cameraFade.OnFadeComplete += LoadNextScene;
 
 	}
