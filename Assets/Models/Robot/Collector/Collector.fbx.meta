@@ -1,0 +1,1543 @@
+fileFormatVersion: 2
+guid: 78f0f5739f88e3545807581b01b63dd6
+timeCreated: 1502417013
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Belly_Ctrl
+    100002: Belly_Ctrl_Grp
+    100004: Belly_Jnt
+    100006: Body
+    100008: Chest_Grp
+    100010: //RootNode
+    100012: Container
+    100014: Container_End
+    100016: Container_Jnt
+    100018: Controls_Grp
+    100020: Data_Grp
+    100022: front1
+    100024: Head
+    100026: Head_Ctrl
+    100028: Head_Ctrl 1
+    100030: Head_Ctrl_Grp
+    100032: Head_Ctrl_Grp 1
+    100034: Head_End
+    100036: Head_JEnd
+    100038: Head_Jnt
+    100040: Head_Jnt 1
+    100042: Hips_Ctrl
+    100044: Hips_Ctrl_Grp
+    100046: Hips_JEnd
+    100048: Hips_Jnt
+    100050: IKhandles_Grp
+    100052: L_arm_Ctrl
+    100054: L_arm_Ctrl_Grp
+    100056: L_arm_ikHandle
+    100058: L_Arm_Pole_Ctrl
+    100060: L_Arm_Pole_Ctrl_Grp
+    100062: L_Clavicle_Ctrl
+    100064: L_Clavicle_Ctrl_Grp
+    100066: L_Clavicle_Jnt
+    100068: L_Elbow_Jnt
+    100070: L_Shoulder_Jnt
+    100072: L_Wrist_End
+    100074: L_Wrist_Jnt
+    100076: Master_Ctrl
+    100078: Master_Ctrl_Grp
+    100080: Option_Ctrl
+    100082: Option_Ctrl_Grp
+    100084: R_arm_Ctrl
+    100086: R_arm_Ctrl_Grp
+    100088: R_arm_ikHandle
+    100090: R_Arm_Pole_Ctrl
+    100092: R_Arm_Pole_Ctrl_Grp
+    100094: R_Clavicle_Ctrl
+    100096: R_Clavicle_Ctrl_Grp
+    100098: R_Clavicle_Jnt
+    100100: R_Elbow_Jnt
+    100102: R_Shoulder_Jnt
+    100104: R_Wrist_End
+    100106: R_Wrist_Jnt
+    100108: Render_Mesh
+    100110: Root_Ctrl
+    100112: Root_Ctrl_Grp
+    100114: Scalable_Jnt
+    100116: Static_Grp
+    400000: Belly_Ctrl
+    400002: Belly_Ctrl_Grp
+    400004: Belly_Jnt
+    400006: Body
+    400008: Chest_Grp
+    400010: //RootNode
+    400012: Container
+    400014: Container_End
+    400016: Container_Jnt
+    400018: Controls_Grp
+    400020: Data_Grp
+    400022: front1
+    400024: Head
+    400026: Head_Ctrl
+    400028: Head_Ctrl 1
+    400030: Head_Ctrl_Grp
+    400032: Head_Ctrl_Grp 1
+    400034: Head_End
+    400036: Head_JEnd
+    400038: Head_Jnt
+    400040: Head_Jnt 1
+    400042: Hips_Ctrl
+    400044: Hips_Ctrl_Grp
+    400046: Hips_JEnd
+    400048: Hips_Jnt
+    400050: IKhandles_Grp
+    400052: L_arm_Ctrl
+    400054: L_arm_Ctrl_Grp
+    400056: L_arm_ikHandle
+    400058: L_Arm_Pole_Ctrl
+    400060: L_Arm_Pole_Ctrl_Grp
+    400062: L_Clavicle_Ctrl
+    400064: L_Clavicle_Ctrl_Grp
+    400066: L_Clavicle_Jnt
+    400068: L_Elbow_Jnt
+    400070: L_Shoulder_Jnt
+    400072: L_Wrist_End
+    400074: L_Wrist_Jnt
+    400076: Master_Ctrl
+    400078: Master_Ctrl_Grp
+    400080: Option_Ctrl
+    400082: Option_Ctrl_Grp
+    400084: R_arm_Ctrl
+    400086: R_arm_Ctrl_Grp
+    400088: R_arm_ikHandle
+    400090: R_Arm_Pole_Ctrl
+    400092: R_Arm_Pole_Ctrl_Grp
+    400094: R_Clavicle_Ctrl
+    400096: R_Clavicle_Ctrl_Grp
+    400098: R_Clavicle_Jnt
+    400100: R_Elbow_Jnt
+    400102: R_Shoulder_Jnt
+    400104: R_Wrist_End
+    400106: R_Wrist_Jnt
+    400108: Render_Mesh
+    400110: Root_Ctrl
+    400112: Root_Ctrl_Grp
+    400114: Scalable_Jnt
+    400116: Static_Grp
+    4300000: Head
+    4300002: Body
+    4300004: Container
+    7400000: Idle
+    7400002: Walk Start
+    7400004: Walk Loop
+    7400006: Walk End
+    7400008: Collecting Start
+    7400010: Collecting Loop
+    7400012: Collecting End
+    7400014: Carrying
+    7400016: Carrying End
+    9500000: //RootNode
+    13700000: Body
+    13700002: Container
+    13700004: Head
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk Start
+      takeName: Take 001
+      firstFrame: 35
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk Loop
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk End
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 82
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Collecting Start
+      takeName: Take 001
+      firstFrame: 82
+      lastFrame: 94
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Collecting Loop
+      takeName: Take 001
+      firstFrame: 94
+      lastFrame: 97
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Collecting End
+      takeName: Take 001
+      firstFrame: 97
+      lastFrame: 101
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Carrying
+      takeName: Take 001
+      firstFrame: 110
+      lastFrame: 145
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Carrying End
+      takeName: Take 001
+      firstFrame: 145
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/Head_Ctrl_Grp
+          1/Head_Ctrl 1
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_arm_Ctrl_Grp/L_arm_Ctrl
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Grp/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_arm_Ctrl_Grp/R_arm_Ctrl
+        weight: 1
+      - path: Data_Grp
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Container_Jnt/Container_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/Head_Jnt 1/Head_JEnd
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Wrist_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Head_Jnt/Head_End
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt
+        weight: 1
+      - path: Data_Grp/Scalable_Jnt/Hips_Jnt/Hips_JEnd
+        weight: 1
+      - path: Data_Grp/Static_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/L_arm_ikHandle
+        weight: 1
+      - path: Data_Grp/Static_Grp/IKhandles_Grp/R_arm_ikHandle
+        weight: 1
+      - path: front1
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/Body
+        weight: 1
+      - path: Render_Mesh/Body/Container
+        weight: 1
+      - path: Render_Mesh/Head
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.05
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

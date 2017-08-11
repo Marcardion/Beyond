@@ -3565,7 +3565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractiveItem: {fileID: 1951086416}
-  scene_name: New Game Tutorial
+  scene_name: Cockpit_Menu
   my_animator: {fileID: 652056962}
 --- !u!1 &662519001
 GameObject:
