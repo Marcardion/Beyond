@@ -13,6 +13,8 @@ public class Resource_Controller : MonoBehaviour {
 
 	private GameObject unitCollecting;
 
+	[SerializeField] private GameObject particleCollecting;
+
 	private Resource_Info myInfo;
 
 	[SerializeField] private AudioClip collect_clip;
@@ -132,12 +134,25 @@ public class Resource_Controller : MonoBehaviour {
 	{
 		StartUnit ();
 
+		if (particleCollecting != null) {
+			
+			particleCollecting.SetActive (true);
+		
+		}
+
 		beingCollected = true;
 		StartCoroutine (StartCollecting ());
 	}
 
 	void EndCollecting()
 	{
+
+		if (particleCollecting != null) {
+
+			particleCollecting.SetActive (false);
+
+		}
+
 		ResetUnit ();
 		SetCarrying ();
 		CopyResource ();

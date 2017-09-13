@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using VRStandardAssets.Utils;
 
-public class CrystalOver : MonoBehaviour
+public class CollectableOver : MonoBehaviour
 {
 	enum MovementType {Teleport, LinearMovement};
 
@@ -15,15 +15,18 @@ public class CrystalOver : MonoBehaviour
 	[SerializeField] private Renderer m_Renderer1;
 	[SerializeField] private Renderer m_Renderer2;
 	[SerializeField] private Renderer m_Renderer3;
+	[SerializeField] private int indice_material;
 
 
 
 
     private void Awake ()
     {
-     	m_Renderer1.material = m_NormalMaterial;
-		m_Renderer2.material = m_NormalMaterial;
-		m_Renderer3.material = m_NormalMaterial;
+		
+
+		m_Renderer1.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
+		m_Renderer2.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
+		m_Renderer3.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
     }
 
 	void Start()
@@ -54,9 +57,9 @@ public class CrystalOver : MonoBehaviour
         private void HandleOver()
         {
 //			reticle_ctrl.SetOnReticleType (InteractionTypes.Waypoint);
-            m_Renderer1.material = m_OverMaterial;
-			m_Renderer2.material = m_OverMaterial;
-			m_Renderer3.material = m_OverMaterial;
+		m_Renderer1.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
+		m_Renderer2.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
+		m_Renderer3.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
         }
 
 
@@ -64,9 +67,9 @@ public class CrystalOver : MonoBehaviour
         private void HandleOut()
         {
 //			reticle_ctrl.SetOnReticleType (InteractionTypes.None);
-            m_Renderer1.material = m_NormalMaterial;
-			m_Renderer2.material = m_NormalMaterial;
-			m_Renderer3.material = m_NormalMaterial;
+		m_Renderer1.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
+		m_Renderer2.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
+		m_Renderer3.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
         }
 
 

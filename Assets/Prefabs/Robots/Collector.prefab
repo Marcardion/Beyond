@@ -5674,7 +5674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: {fileID: 114444459341475212}
   m_NormalMaterial: {fileID: 2100000, guid: 00ce8bbe6f8905244b922b1e84e5e827, type: 2}
-  m_OverMaterial: {fileID: 2100000, guid: d4b788cd483db504d88965501d430c9c, type: 2}
+  m_OverMaterial: {fileID: 2100000, guid: aa6fa63185c1ed14c887b90acbec5474, type: 2}
   m_ClickMaterial: {fileID: 2100000, guid: 6b7ae751b59c0a04f893caf7930678ab, type: 2}
   m_Renderer: {fileID: 23169704924924574}
   m_HUD: {fileID: 114754378839444960}
@@ -5880,6 +5880,7 @@ LineRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
+    generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
 --- !u!124 &124226290051821368
