@@ -8,6 +8,7 @@ public class Base_Controller : MonoBehaviour {
 
 	[SerializeField] private AudioClip deliver_clip;
 	[SerializeField] private GameObject particleBase;
+	[SerializeField] private GameObject arrowsBase;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +27,12 @@ public class Base_Controller : MonoBehaviour {
 
 	}
 
+	public GameObject ReturnArrowsBase(){
+
+		return arrowsBase;
+
+	}
+
 	void OnTriggerEnter(Collider col)
 	{
 			if (col.CompareTag ("Unit"))
@@ -38,13 +45,29 @@ public class Base_Controller : MonoBehaviour {
 					col.gameObject.GetComponent<Animator> ().SetBool ("Is_Carrying", false);
 					SoundManager.instance.PlaySingle (deliver_clip, 0);
 					
-					if (particleBase != null) {
-						particleBase.SetActive (false);
-					}
+					StartCoroutine (WaitForParticle());
 
+					if (arrowsBase != null) {
+						arrowsBase.SetActive (false);
+					}
 				}
 			}
 	}
+
+	public IEnumerator WaitForParticle(){
+
+		if (particleBase != null) {
+			particleBase.SetActive (true);
+		}
+
+		yield return new WaitForSeconds (2f);
+
+		if (particleBase != null) {
+			particleBase.SetActive (false);
+		}
+
+	}
+
 
 	void IncreaseResource(Resource_Info info)
 	{
