@@ -27,9 +27,11 @@ public class Ship_Manager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		input = GetComponentInChildren<VRInput> ();
-		if (activeWaypoint == null)
-		{
+		if (activeWaypoint == null) {
 			Debug.Log ("Active Waypoint inicial não inicializado");
+		} else 
+		{
+			activeWaypoint.GetComponentInChildren<Renderer> ().enabled = false;
 		}
 	}
 
