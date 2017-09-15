@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum InteractionTypes {Ground, Unit, Resource, Waypoint, None};
+public enum InteractionTypes {Ground, Unit, Resource, Waypoint, Message, None};
 
 public class Interaction_Manager : MonoBehaviour {
 

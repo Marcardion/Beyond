@@ -18,13 +18,22 @@ public class Ship_Manager : MonoBehaviour {
 	[SerializeField] private AudioClip deselect_clip;
 	[SerializeField] private AudioClip move_clip;
 
+	[Header("Waypoint")]
+	public GameObject activeWaypoint;
+
 	public Action OnSelect;
 	public Action OnDeselect;
 
 	// Use this for initialization
 	void Awake () {
 		input = GetComponentInChildren<VRInput> ();
+		if (activeWaypoint == null)
+		{
+			Debug.Log ("Active Waypoint inicial não inicializado");
+		}
 	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -97,5 +106,12 @@ public class Ship_Manager : MonoBehaviour {
 			MoveUnitTo (location);
 			selected_unit.GetComponentInParent<Unit_Controller> ().SetCollectionFlag (true);
 		}
+	}
+
+	public void ChangeActiveWaypoint(GameObject nextWaypoint)
+	{
+		activeWaypoint.GetComponentInChildren<Renderer> ().enabled = true;
+		activeWaypoint = nextWaypoint;
+		activeWaypoint.GetComponentInChildren<Renderer> ().enabled = false;
 	}
 }
