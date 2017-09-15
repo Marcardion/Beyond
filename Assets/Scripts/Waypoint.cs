@@ -14,6 +14,7 @@ public class Waypoint : MonoBehaviour
     [SerializeField] private Renderer m_Renderer;
 	[SerializeField] private Transform myCameraPosition;
 	private Transform activeCameraPosition;
+	private Ship_Manager shipManager;
 	private VRCameraFade cameraFade;
 	private Reticle_Controller reticle_ctrl;
 
@@ -28,6 +29,7 @@ public class Waypoint : MonoBehaviour
 	{
 		cameraFade = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<VRCameraFade> ();
 		activeCameraPosition = GameObject.FindGameObjectWithTag ("CameraRig").transform;
+		shipManager = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Ship_Manager>();
 		reticle_ctrl = GameObject.FindGameObjectWithTag ("CameraRig").GetComponent<Reticle_Controller> ();
 
 	}
@@ -74,6 +76,7 @@ public class Waypoint : MonoBehaviour
 			
 			if (m_Type == MovementType.Teleport)
 			{
+				
 				StartCoroutine (cameraFade.BeginFadeOut (true));
 				cameraFade.OnFadeComplete += StartTeleport;
 			}
@@ -87,6 +90,7 @@ public class Waypoint : MonoBehaviour
 
 		private void StartTeleport()
 		{
+			shipManager.ChangeActiveWaypoint (this.gameObject);
 			activeCameraPosition.position = myCameraPosition.position;
 			activeCameraPosition.rotation = myCameraPosition.rotation;
 			cameraFade.OnFadeComplete -= StartTeleport;

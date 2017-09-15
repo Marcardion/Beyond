@@ -43,5 +43,12 @@ public class Message_Group : MonoBehaviour {
 		}
 	}
 
+	public void StartMessage()
+	{
+		activeIndex = 0;
+		messageControl.ChangeText (messages [activeIndex]);
+		messageControl.ActivateMessage ();
+	}
+
 
 }

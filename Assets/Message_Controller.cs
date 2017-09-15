@@ -16,7 +16,7 @@ public class Message_Controller : MonoBehaviour {
 	void Start () {
 
 		cameraRig = GameObject.FindGameObjectWithTag ("CameraRig").transform;
-		ActivateMessage ();
+		message.SetActive (false);
 	}
 
 
@@ -29,18 +29,26 @@ public class Message_Controller : MonoBehaviour {
 
 	public void ActivateMessage()
 	{
-		message.SetActive (true);
+		StartCoroutine (TurnOnorOff (true, 0));
 		message.GetComponent<Animator> ().SetBool ("Active", true);
 	}
 
 	public void DeactivateMessage()
 
 	{
+		StartCoroutine (TurnOnorOff (false, 0.25f));
 		message.GetComponent<Animator> ().SetBool ("Active", false);
 	}
 
 	public void ChangeText(TextMeshProUGUI nextText)
 	{
 		message_text.text = nextText.text;
+	}
+
+	IEnumerator TurnOnorOff(bool mode, float time)
+	{
+		yield return new WaitForSeconds (time);
+
+		message.SetActive (mode);
 	}
 }
