@@ -15,6 +15,7 @@ public class Resource_Controller : MonoBehaviour {
 
 	[SerializeField] private GameObject particleCollecting;
 	[SerializeField] private GameObject particleBase;
+	[SerializeField] private GameObject arrowsBase;
 
 	private Resource_Info myInfo;
 
@@ -25,6 +26,7 @@ public class Resource_Controller : MonoBehaviour {
 		models = GetComponentsInChildren<MeshRenderer> ();
 		myInfo = GetComponent<Resource_Info> ();
 		particleBase = GameObject.FindGameObjectWithTag ("Base").GetComponent<Base_Controller> ().ReturnParticle ();
+		arrowsBase = GameObject.FindGameObjectWithTag ("Base").GetComponent<Base_Controller> ().ReturnArrowsBase ();
 	}
 	
 	// Update is called once per frame
@@ -147,16 +149,20 @@ public class Resource_Controller : MonoBehaviour {
 	void EndCollecting()
 	{
 
+		//Ativar particulas
+
 		if (particleCollecting != null) {
 			particleCollecting.SetActive (false);
 		}
 
 		if (particleBase != null) {
-			particleBase.SetActive (true);
+			particleBase.SetActive (false);
 		}
 
+		if (arrowsBase != null) {
+			arrowsBase.SetActive (true);
+		}
 
-		//william
 
 		ResetUnit ();
 		SetCarrying ();
