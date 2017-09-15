@@ -70,31 +70,23 @@ public class Resource_Controller : MonoBehaviour {
 
 	IEnumerator StartCollecting()
 	{
-		Debug.Log ("Start");
 		float timer = 0;
 
 		while (beingCollected == true && collection_ended == false)
 		{
-			Debug.Log ("Enter");
 			timer += Time.deltaTime;
 
 			if (timer >= 5f)
 			{
-				Debug.Log ("Hello");
 				EndCollecting ();
 			}
 
 			yield return new WaitForFixedUpdate ();
 		}
-
-		Debug.Log ("End");
-
 	}
 
 	IEnumerator FadeAndDestroy()
 	{
-
-
 		float fade = 1;
 
 		Renderer[] models = GetComponentsInChildren<Renderer> ();
@@ -148,7 +140,6 @@ public class Resource_Controller : MonoBehaviour {
 
 	void EndCollecting()
 	{
-
 		//Ativar particulas
 
 		if (particleCollecting != null) {
@@ -162,8 +153,7 @@ public class Resource_Controller : MonoBehaviour {
 		if (arrowsBase != null) {
 			arrowsBase.SetActive (true);
 		}
-
-
+			
 		ResetUnit ();
 		SetCarrying ();
 		CopyResource ();
