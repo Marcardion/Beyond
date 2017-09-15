@@ -14,6 +14,7 @@ public class Reticle_Controller : MonoBehaviour {
 	[SerializeField] private Sprite resourceHarvestReticle;
 	[SerializeField] private Sprite waypointReticle;
 	[SerializeField] private Sprite unitReticle;
+	[SerializeField] private Sprite messageReticle;
 
 	private bool unitSelected = false;
 
