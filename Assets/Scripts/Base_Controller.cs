@@ -7,6 +7,7 @@ public class Base_Controller : MonoBehaviour {
 	private Resource_Manager resourceManager;
 
 	[SerializeField] private AudioClip deliver_clip;
+	[SerializeField] private GameObject particleBase;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +17,13 @@ public class Base_Controller : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+
+	public GameObject ReturnParticle(){
+
+		return particleBase;
+
 	}
 
 	void OnTriggerEnter(Collider col)
@@ -29,6 +37,11 @@ public class Base_Controller : MonoBehaviour {
 					col.gameObject.GetComponent<Unit_Controller> ().ChangeUnitState (Unit_State.Idle);
 					col.gameObject.GetComponent<Animator> ().SetBool ("Is_Carrying", false);
 					SoundManager.instance.PlaySingle (deliver_clip, 0);
+					
+					if (particleBase != null) {
+						particleBase.SetActive (false);
+					}
+
 				}
 			}
 	}
