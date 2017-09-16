@@ -5104,7 +5104,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: d4b788cd483db504d88965501d430c9c, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5674,7 +5674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: {fileID: 114444459341475212}
   m_NormalMaterial: {fileID: 2100000, guid: 00ce8bbe6f8905244b922b1e84e5e827, type: 2}
-  m_OverMaterial: {fileID: 2100000, guid: aa6fa63185c1ed14c887b90acbec5474, type: 2}
+  m_OverMaterial: {fileID: 2100000, guid: 0b2bb3c0503906341a2d98210dc26d15, type: 2}
   m_ClickMaterial: {fileID: 2100000, guid: 6b7ae751b59c0a04f893caf7930678ab, type: 2}
   m_Renderer: {fileID: 23169704924924574}
   m_HUD: {fileID: 114754378839444960}
@@ -5727,7 +5727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f15076fa47b63da42b849f99aaf38208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: aa6fa63185c1ed14c887b90acbec5474, type: 2}
+  material: {fileID: 2100000, guid: 0b2bb3c0503906341a2d98210dc26d15, type: 2}
   scrollVelocity: {x: 0, y: 0.3}
 --- !u!114 &114674855912235830
 MonoBehaviour:
@@ -5742,7 +5742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selected: {fileID: 114444459341475212}
   m_NormalMaterial: {fileID: 2100000, guid: 00ce8bbe6f8905244b922b1e84e5e827, type: 2}
-  m_OverMaterial: {fileID: 2100000, guid: aa6fa63185c1ed14c887b90acbec5474, type: 2}
+  m_OverMaterial: {fileID: 2100000, guid: 0b2bb3c0503906341a2d98210dc26d15, type: 2}
   m_ClickMaterial: {fileID: 2100000, guid: 6b7ae751b59c0a04f893caf7930678ab, type: 2}
   m_Renderer: {fileID: 23169704924924574}
   m_HUD: {fileID: 114754378839444960}
@@ -5899,10 +5899,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.12005627
-  m_Height: 0.5
+  m_Radius: 0.13482684
+  m_Height: 0.6506665
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.07533324, z: -0.014770567}
 --- !u!136 &136888825459002392
 CapsuleCollider:
   m_ObjectHideFlags: 1
