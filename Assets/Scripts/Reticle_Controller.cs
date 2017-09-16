@@ -67,6 +67,9 @@ public class Reticle_Controller : MonoBehaviour {
 					ResetReticle();
 				}
 				break;
+			case InteractionTypes.Message:
+				SetReticleToMessage ();
+				break;
 			case InteractionTypes.Waypoint:
 				SetReticleToWaypoint ();
 				break;
@@ -103,6 +106,14 @@ public class Reticle_Controller : MonoBehaviour {
 		reticle_center.enabled = true;
 		reticle_center.sprite = waypointReticle;
 		reticle_center.color = new Color (168 / 255f, 251 / 255f, 241 / 255f);
+	}
+
+	public void SetReticleToMessage()
+	{
+		reticle.UseNormal = false;
+		reticle_center.enabled = true;
+		reticle_center.sprite = messageReticle;
+		reticle_center.color = new Color (255 / 255f, 255 / 255f, 255 / 255f);
 	}
 
 	public void SetReticleToResourceHarvest()

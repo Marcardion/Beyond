@@ -891,6 +891,8 @@ MonoBehaviour:
   message: {fileID: 1780432559937504}
   message_interactive: {fileID: 114117646707311678}
   message_text: {fileID: 114498982254356926}
+  nextMessageClip: {fileID: 8300000, guid: a0669c4585a4a4d41a6bfcc5643b9ad7, type: 3}
+  endMessageClip: {fileID: 8300000, guid: be2b59a889479ff41a083f6745f80bae, type: 3}
 --- !u!114 &114190238198613190
 MonoBehaviour:
   m_ObjectHideFlags: 1

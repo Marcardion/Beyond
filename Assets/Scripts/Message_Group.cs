@@ -12,8 +12,6 @@ public class Message_Group : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-		messageControl.ChangeText (messages [0]);
 		
 	}
 

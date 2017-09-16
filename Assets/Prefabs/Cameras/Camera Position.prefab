@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114833419699799598}
   - component: {fileID: 114593538912107328}
   m_Layer: 0
-  m_Name: Cube_001
+  m_Name: Ship Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4280558203883050}
   - component: {fileID: 95310997995148654}
   m_Layer: 0
-  m_Name: Nave Beyond
+  m_Name: Camera Drone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

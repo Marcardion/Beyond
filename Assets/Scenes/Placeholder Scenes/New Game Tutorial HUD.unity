@@ -385,16 +385,6 @@ Prefab:
       propertyPath: m_Name
       value: Camera Rig
       objectReference: {fileID: 0}
-    - target: {fileID: 114498982254356926, guid: 83b61ef6aa6ad8f4587009122a89b167,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114498982254356926, guid: 83b61ef6aa6ad8f4587009122a89b167,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83b61ef6aa6ad8f4587009122a89b167, type: 2}
   m_IsPrefabParent: 0
@@ -1132,7 +1122,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 26
   m_IsActive: 1
 --- !u!4 &773842510
 Transform:
@@ -2020,6 +2010,11 @@ Prefab:
     - target: {fileID: 114176368697609742, guid: 6c75241935074cd45a10c0f0a1908b98,
         type: 2}
       propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195231952181136908, guid: 6c75241935074cd45a10c0f0a1908b98,
+        type: 2}
+      propertyPath: m_AutoBraking
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
