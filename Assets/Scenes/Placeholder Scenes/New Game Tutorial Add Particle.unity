@@ -1167,11 +1167,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773842509}
   m_Mesh: {fileID: 4300006, guid: 791ca02ab72644e46b30fc73422d9054, type: 3}
---- !u!82 &792785740 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82360615000839654, guid: 83b61ef6aa6ad8f4587009122a89b167,
-    type: 2}
-  m_PrefabInternal: {fileID: 137866872}
 --- !u!1 &840470180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1257,8 +1252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   efxSource:
-  - {fileID: 998129794}
-  musicSource: {fileID: 792785740}
+  - {fileID: 0}
+  musicSource: {fileID: 0}
   lowPitchRange: 0.95
   highPitchRange: 1.05
 --- !u!1 &915301254 stripped
@@ -1306,11 +1301,6 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 22b6ac646b019d44d82ed70a3b3ffac9, type: 3}
---- !u!82 &998129794 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82596334788404054, guid: 83b61ef6aa6ad8f4587009122a89b167,
-    type: 2}
-  m_PrefabInternal: {fileID: 137866872}
 --- !u!1001 &1028709664
 Prefab:
   m_ObjectHideFlags: 0

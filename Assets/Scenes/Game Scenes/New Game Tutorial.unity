@@ -1793,7 +1793,7 @@ Prefab:
         type: 2}
       propertyPath: m_OverMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: aa6fa63185c1ed14c887b90acbec5474, type: 2}
+      objectReference: {fileID: 2100000, guid: 0b2bb3c0503906341a2d98210dc26d15, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c75241935074cd45a10c0f0a1908b98, type: 2}
   m_IsPrefabParent: 0
