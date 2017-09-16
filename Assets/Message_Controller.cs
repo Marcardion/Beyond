@@ -29,7 +29,7 @@ public class Message_Controller : MonoBehaviour {
 
 	public void ActivateMessage()
 	{
-		StartCoroutine (TurnOnorOff (true, 0));
+		message.SetActive (true);
 		message.GetComponent<Animator> ().SetBool ("Active", true);
 	}
 
