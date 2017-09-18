@@ -105,7 +105,10 @@ public class Resource_Controller : MonoBehaviour {
 			{
 				foreach (Material material in model.materials)
 				{
-					material.color = new Color (material.color.r, material.color.g, material.color.b, fade);
+					if(material.HasProperty("color")){
+
+						material.color = new Color (material.color.r, material.color.g, material.color.b, fade);
+					}
 				}
 
 			}

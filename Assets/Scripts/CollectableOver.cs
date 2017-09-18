@@ -17,7 +17,7 @@ public class CollectableOver : MonoBehaviour
 	[SerializeField] private Renderer m_Renderer3;
 	[SerializeField] private int indice_material;
 
-
+	private bool clickedCol = false;
 
 
     private void Awake ()
@@ -67,9 +67,13 @@ public class CollectableOver : MonoBehaviour
         private void HandleOut()
         {
 //			reticle_ctrl.SetOnReticleType (InteractionTypes.None);
-		m_Renderer1.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
-		m_Renderer2.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
-		m_Renderer3.materials[indice_material].CopyPropertiesFromMaterial(m_NormalMaterial);
+
+			if (clickedCol == false) {
+
+				m_Renderer1.materials [indice_material].CopyPropertiesFromMaterial (m_NormalMaterial);
+				m_Renderer2.materials [indice_material].CopyPropertiesFromMaterial (m_NormalMaterial);
+				m_Renderer3.materials [indice_material].CopyPropertiesFromMaterial (m_NormalMaterial);
+			}
         }
 
 
@@ -78,6 +82,14 @@ public class CollectableOver : MonoBehaviour
         {
             Debug.Log("Show click state");
 			
+			clickedCol = true;
+
+			m_Renderer1.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
+			m_Renderer2.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
+			m_Renderer3.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
+
+			
+
 			/*if (m_Type == MovementType.Teleport)
 			{
 				//StartCoroutine (cameraFade.BeginFadeOut (true));
