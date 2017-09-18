@@ -13,6 +13,7 @@ public class Resource_Controller : MonoBehaviour {
 
 	private GameObject unitCollecting;
 
+	[SerializeField] private GameObject particleCollectable;
 	[SerializeField] private GameObject particleCollecting;
 	[SerializeField] private GameObject particleBase;
 	[SerializeField] private GameObject arrowsBase;
@@ -135,6 +136,10 @@ public class Resource_Controller : MonoBehaviour {
 
 		if (particleCollecting != null) {
 			particleCollecting.SetActive (true);
+
+			if(particleCollectable != null) {
+				particleCollectable.SetActive (false);
+			}
 		}
 
 		beingCollected = true;
