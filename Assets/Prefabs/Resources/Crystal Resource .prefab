@@ -878,7 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53f25de05a82d8e4782b45af496438b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleCollectable: {fileID: 0}
+  particleCollectable: {fileID: 1760682886502022}
   particleCollecting: {fileID: 1610906209842408}
   particleBase: {fileID: 0}
   arrowsBase: {fileID: 0}
@@ -993,7 +993,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 831738177
+  randomSeed: -356362095
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3518,7 +3518,7 @@ ParticleSystem:
         m_RotationOrder: 4
     maxLights: 20
   TrailModule:
-    enabled: 0
+    enabled: 1
     ratio: 1
     lifetime:
       serializedVersion: 2
@@ -4255,7 +4255,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -589557388
+  randomSeed: -573745807
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7509,7 +7509,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: 5c8ee43ce2a436849a67066399eaa09f, type: 2}
-  - {fileID: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

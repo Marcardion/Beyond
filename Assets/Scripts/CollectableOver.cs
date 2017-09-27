@@ -18,6 +18,7 @@ public class CollectableOver : MonoBehaviour
 	[SerializeField] private int indice_material;
 
 	private bool clickedCol = false;
+	private Ship_Manager shipManager;
 
 
     private void Awake ()
@@ -31,7 +32,7 @@ public class CollectableOver : MonoBehaviour
 
 	void Start()
 	{
-
+		shipManager = GameObject.FindGameObjectWithTag("CameraRig").GetComponent<Ship_Manager> ();
 	}
 
 
@@ -81,13 +82,13 @@ public class CollectableOver : MonoBehaviour
         private void HandleClick()
         {
             Debug.Log("Show click state");
-			
-			clickedCol = true;
-
-			m_Renderer1.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
-			m_Renderer2.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
-			m_Renderer3.materials[indice_material].CopyPropertiesFromMaterial(m_OverMaterial);
-
+			if (shipManager.HasRobotSelected()) 
+			{
+				clickedCol = true;
+				m_Renderer1.materials [indice_material].CopyPropertiesFromMaterial (m_OverMaterial);
+				m_Renderer2.materials [indice_material].CopyPropertiesFromMaterial (m_OverMaterial);
+				m_Renderer3.materials [indice_material].CopyPropertiesFromMaterial (m_OverMaterial);
+			}
 			
 
 			/*if (m_Type == MovementType.Teleport)

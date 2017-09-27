@@ -116,4 +116,14 @@ public class Ship_Manager : MonoBehaviour {
 		activeWaypoint = nextWaypoint;
 		activeWaypoint.GetComponentInChildren<Renderer> ().enabled = false;
 	}
+
+	public bool HasRobotSelected()
+	{
+		if (selected_unit != null) {
+			return true;
+		} else 
+		{
+			return false;
+		}
+	}
 }
