@@ -22,6 +22,14 @@ ModelImporter:
     100028: teto
     100030: Vidro
     100032: Volant
+    100034: BOTOES.001
+    100036: bussola
+    100038: escala
+    100040: Lamp.000
+    100042: Painel
+    100044: sol e lua
+    100046: teclas
+    100048: tela esquerda
     400000: base
     400002: BOTOES
     400004: cadeira
@@ -39,6 +47,14 @@ ModelImporter:
     400028: teto
     400030: Vidro
     400032: Volant
+    400034: BOTOES.001
+    400036: bussola
+    400038: escala
+    400040: Lamp.000
+    400042: Painel
+    400044: sol e lua
+    400046: teclas
+    400048: tela esquerda
     2000000: Camera
     2000002: Camera.001
     2000004: Camera.002
@@ -50,6 +66,13 @@ ModelImporter:
     2300010: teto
     2300012: Vidro
     2300014: Volant
+    2300016: BOTOES.001
+    2300018: bussola
+    2300020: escala
+    2300022: Painel
+    2300024: sol e lua
+    2300026: teclas
+    2300028: tela esquerda
     3300000: base
     3300002: BOTOES
     3300004: cadeira
@@ -58,6 +81,13 @@ ModelImporter:
     3300010: teto
     3300012: Vidro
     3300014: Volant
+    3300016: BOTOES.001
+    3300018: bussola
+    3300020: escala
+    3300022: Painel
+    3300024: sol e lua
+    3300026: teclas
+    3300028: tela esquerda
     4300000: Corpo
     4300002: Cpact
     4300004: Vidro
@@ -66,11 +96,19 @@ ModelImporter:
     4300010: cadeira
     4300012: teto
     4300014: base
+    4300016: BOTOES.001
+    4300018: sol e lua
+    4300020: Painel
+    4300022: teclas
+    4300024: escala
+    4300026: bussola
+    4300028: tela esquerda
     10800000: Lamp
     10800002: Lamp.001
     10800004: Lamp.002
     10800006: Lamp.003
     10800008: Lamp.004
+    10800010: Lamp.000
   materials:
     importMaterials: 1
     materialName: 0

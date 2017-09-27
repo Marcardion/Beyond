@@ -46,6 +46,11 @@ public class Reticle_Controller : MonoBehaviour {
 		reticle = GetComponentInChildren<Reticle> ();
 		
 	}
+
+	void Start()
+	{
+		ResetReticle ();
+	}
 	
 	// Update is called once per frame
 	void Update () 
