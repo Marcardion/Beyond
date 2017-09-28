@@ -29,3 +29,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Intro.unity
     guid: 1c5fe2bf037ade84ca9ed9d97b0e1b97
+  - enabled: 0
+    path: Assets/Scenes/Placeholder Scenes/Cockpit_Menu_Panel.unity
+    guid: 994d35c40d1e99842bc995ed07c1a0e3
