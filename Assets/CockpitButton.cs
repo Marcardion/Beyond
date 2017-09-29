@@ -7,6 +7,7 @@ public class CockpitButton : MonoBehaviour {
 
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 	[SerializeField] private Animator bodyAnimator;
+	[SerializeField] private Animator buttomAnimator;
 	[SerializeField] private string animationCall;
 
 	// Use this for initialization
@@ -23,6 +24,8 @@ public class CockpitButton : MonoBehaviour {
 	{
 
 		m_InteractiveItem.OnClick += HandleClick;
+		m_InteractiveItem.OnOver += HandleOver;
+		m_InteractiveItem.OnOut += HandleOut;
 
 	}
 
@@ -30,6 +33,8 @@ public class CockpitButton : MonoBehaviour {
 	private void OnDisable()
 	{
 		m_InteractiveItem.OnClick -= HandleClick;
+		m_InteractiveItem.OnOver -= HandleOver;
+		m_InteractiveItem.OnOut -= HandleOut;
 	}
 
 
@@ -39,4 +44,18 @@ public class CockpitButton : MonoBehaviour {
 		Debug.Log ("Test");
 		bodyAnimator.SetTrigger (animationCall);
 	}
+
+	//Handle the Click event
+	private void HandleOver()
+	{
+		buttomAnimator.SetBool ("isOver", true);
+		Debug.Log ("Test");
+
+	}
+
+	private void HandleOut()
+	{
+		buttomAnimator.SetBool ("isOver", false);
+	}
+
 }
