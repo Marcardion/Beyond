@@ -342,6 +342,8 @@ ModelImporter:
     7400010: Play Start
     7400012: Play Press
     7400014: Play End
+    7400016: Right Press
+    7400018: Left Press
     9500000: //RootNode
     13700000: BODY:Mesh
   materials:
@@ -728,7 +730,7 @@ ModelImporter:
       name: Right Start
       takeName: Take 001
       firstFrame: 64
-      lastFrame: 80
+      lastFrame: 73
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1079,7 +1081,7 @@ ModelImporter:
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: Right End
       takeName: Take 001
@@ -1435,12 +1437,12 @@ ModelImporter:
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: Left Start
       takeName: Take 001
       firstFrame: 94
-      lastFrame: 113
+      lastFrame: 108
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1791,7 +1793,7 @@ ModelImporter:
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: Left End
       takeName: Take 001
@@ -3216,6 +3218,718 @@ ModelImporter:
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Right Press
+      takeName: Take 001
+      firstFrame: 73
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Group
+        weight: 1
+      - path: Controls_Group/L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: Controls_Group/L_Leg_Pole_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/L_Leg_Pole_Ctrl_Grp/L_Leg_Pole_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl/L_Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl/L_Hips_Ctrl_Grp/L_Hips_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl/R_Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl/R_Hips_Ctrl_Grp/R_Hips_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_1Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_1Grp/L_Finger_1
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_1Grp/L_Finger_1/L_Finger_1_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_1Grp/L_Finger_1/L_Finger_1_2_Grp/L_Finger_1_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_2_Grp/L_Finger_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_2_Grp/L_Finger_2/L_Finger_2_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_2_Grp/L_Finger_2/L_Finger_2_2_Grp/L_Finger_2_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_3_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_3_Grp/L_Finger_3
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_3_Grp/L_Finger_3/L_Finger_3_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_3_Grp/L_Finger_3/L_Finger_3_2_Grp/L_Finger_3_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_4_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_4_Grp/L_Finger_4
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_4_Grp/L_Finger_4/L_Finger_4_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_4_Grp/L_Finger_4/L_Finger_4_2_Grp/L_Finger_4_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_5_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_5_Grp/L_Finger_5
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_5_Grp/L_Finger_5/L_Finger_5_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_5_Grp/L_Finger_5/L_Finger_5_2_Grp/L_Finger_5_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Leg_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Leg_Ctrl_Grp/L_Leg_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_1Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_1Grp/R_Finger_1
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_1Grp/R_Finger_1/R_Finger_1_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_1Grp/R_Finger_1/R_Finger_1_2_Grp/R_Finger_1_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_2_Grp/R_Finger_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_2_Grp/R_Finger_2/R_Finger_2_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_2_Grp/R_Finger_2/R_Finger_2_2_Grp/R_Finger_2_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_3_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_3_Grp/R_Finger_3
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_3_Grp/R_Finger_3/R_Finger_3_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_3_Grp/R_Finger_3/R_Finger_3_2_Grp/R_Finger_3_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_4_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_4_Grp/R_Finger_4
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_4_Grp/R_Finger_4/R_Finger_4_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_4_Grp/R_Finger_4/R_Finger_4_2_Grp/R_Finger_4_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_5_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_5_Grp/R_Finger_5
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_5_Grp/R_Finger_5/R_Finger_5_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_5_Grp/R_Finger_5/R_Finger_5_2_Grp/R_Finger_5_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Leg_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Leg_Ctrl_Grp/R_Leg_Ctrl
+        weight: 1
+      - path: Controls_Group/R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Controls_Group/R_Leg_Pole_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/R_Leg_Pole_Ctrl_Grp/R_Leg_Pole_Ctrl
+        weight: 1
+      - path: Data_Group
+        weight: 1
+      - path: Data_Group/Scalable_Grp
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/Head_Jnt/Head_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_1_Jnt/L_Finger_1_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_1_Jnt/L_Finger_1_1_Jnt/L_Finger_1_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_2_Jnt/L_Finger_2_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_2_Jnt/L_Finger_2_1_Jnt/L_Finger_2_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_2_Jnt/L_Finger_2_1_Jnt/L_Finger_2_2_Jnt/L_Finger_2_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_3_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_3_Jnt/L_Finger_3_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_3_Jnt/L_Finger_3_1_Jnt/L_Finger_3_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_3_Jnt/L_Finger_3_1_Jnt/L_Finger_3_2_Jnt/L_Finger_3_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_4_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_4_Jnt/L_Finger_4_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_4_Jnt/L_Finger_4_1_Jnt/L_Finger_4_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_4_Jnt/L_Finger_4_1_Jnt/L_Finger_4_2_Jnt/L_Finger_4_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_5_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_5_Jnt/L_Finger_5_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_5_Jnt/L_Finger_5_1_Jnt/L_Finger_5_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_5_Jnt/L_Finger_5_1_Jnt/L_Finger_5_2_Jnt/L_Finger_5_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_1_Jnt/R_Finger_1_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_1_Jnt/R_Finger_1_1_Jnt/R_Finger_1_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_2_Jnt/R_Finger_2_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_2_Jnt/R_Finger_2_1_Jnt/R_Finger_2_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_2_Jnt/R_Finger_2_1_Jnt/R_Finger_2_2_Jnt/R_Finger_2_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_3_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_3_Jnt/R_Finger_3_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_3_Jnt/R_Finger_3_1_Jnt/R_Finger_3_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_3_Jnt/R_Finger_3_1_Jnt/R_Finger_3_2_Jnt/R_Finger_3_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_4_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_4_Jnt/R_Finger_4_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_4_Jnt/R_Finger_4_1_Jnt/R_Finger_4_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_4_Jnt/R_Finger_4_1_Jnt/R_Finger_4_2_Jnt/R_Finger_4_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_5_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_5_Jnt/R_Finger_5_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_5_Jnt/R_Finger_5_1_Jnt/R_Finger_5_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_5_Jnt/R_Finger_5_1_Jnt/R_Finger_5_2_Jnt/R_Finger_5_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt/L_leg_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt/L_leg_Jnt/L_knee_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt/L_leg_Jnt/L_knee_Jnt/L_ankle_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt/L_leg_Jnt/L_knee_Jnt/L_ankle_Jnt/L_ankle_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt/R_leg_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt/R_leg_Jnt/R_knee_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt/R_leg_Jnt/R_knee_Jnt/R_ankle_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt/R_leg_Jnt/R_knee_Jnt/R_ankle_Jnt/R_ankle_JEnd
+        weight: 1
+      - path: Data_Group/Static_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster1_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster1_Grp/cluster1Handle
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster2_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster2_Grp/cluster2Handle
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster3_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster3_Grp/cluster3Handle
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/L_Arm_ikHandle_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/L_Arm_ikHandle_Grp/L_Arm_ikHandle
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/L_Leg_ikHandle_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/L_Leg_ikHandle_Grp/L_Leg_ikHandle
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/R_Arm_ikHandle_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/R_Arm_ikHandle_Grp/R_Arm_ikHandle
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/R_Leg_ikHandle_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/R_Leg_ikHandle_Grp/R_Leg_ikHandle
+        weight: 1
+      - path: Data_Group/Static_Grp/Spline_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/Spline_Grp/Spline_IKH
+        weight: 1
+      - path: Data_Group/Static_Grp/Spline_Grp/Spline_IKH_crv
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/BODY:Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Left Press
+      takeName: Take 001
+      firstFrame: 108
+      lastFrame: 113
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Controls_Group
+        weight: 1
+      - path: Controls_Group/L_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/L_Arm_Pole_Ctrl_Grp/L_Arm_Pole_Ctrl
+        weight: 1
+      - path: Controls_Group/L_Leg_Pole_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/L_Leg_Pole_Ctrl_Grp/L_Leg_Pole_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Option_Ctrl_Grp/Option_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/Head_Ctrl_Grp/Head_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/L_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/L_Clavicle_Ctrl_Grp/L_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/R_Clavicle_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Chest_Grp/Belly_Ctrl_Grp/Belly_Ctrl/R_Clavicle_Ctrl_Grp/R_Clavicle_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl/L_Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl/L_Hips_Ctrl_Grp/L_Hips_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl/R_Hips_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/Hips_Ctrl_Grp/Hips_Ctrl/R_Hips_Ctrl_Grp/R_Hips_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_1Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_1Grp/L_Finger_1
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_1Grp/L_Finger_1/L_Finger_1_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_1Grp/L_Finger_1/L_Finger_1_2_Grp/L_Finger_1_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_2_Grp/L_Finger_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_2_Grp/L_Finger_2/L_Finger_2_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_2_Grp/L_Finger_2/L_Finger_2_2_Grp/L_Finger_2_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_3_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_3_Grp/L_Finger_3
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_3_Grp/L_Finger_3/L_Finger_3_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_3_Grp/L_Finger_3/L_Finger_3_2_Grp/L_Finger_3_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_4_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_4_Grp/L_Finger_4
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_4_Grp/L_Finger_4/L_Finger_4_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_4_Grp/L_Finger_4/L_Finger_4_2_Grp/L_Finger_4_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_5_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_5_Grp/L_Finger_5
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_5_Grp/L_Finger_5/L_Finger_5_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Arm_Ctrl_Grp/L_Arm_Ctrl/L_Fingers/L_Finger_5_Grp/L_Finger_5/L_Finger_5_2_Grp/L_Finger_5_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Leg_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/L_Leg_Ctrl_Grp/L_Leg_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_1Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_1Grp/R_Finger_1
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_1Grp/R_Finger_1/R_Finger_1_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_1Grp/R_Finger_1/R_Finger_1_2_Grp/R_Finger_1_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_2_Grp/R_Finger_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_2_Grp/R_Finger_2/R_Finger_2_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_2_Grp/R_Finger_2/R_Finger_2_2_Grp/R_Finger_2_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_3_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_3_Grp/R_Finger_3
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_3_Grp/R_Finger_3/R_Finger_3_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_3_Grp/R_Finger_3/R_Finger_3_2_Grp/R_Finger_3_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_4_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_4_Grp/R_Finger_4
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_4_Grp/R_Finger_4/R_Finger_4_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_4_Grp/R_Finger_4/R_Finger_4_2_Grp/R_Finger_4_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_5_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_5_Grp/R_Finger_5
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_5_Grp/R_Finger_5/R_Finger_5_2_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Arm_Ctrl_Grp/R_Arm_Ctrl/R_Fingers/R_Finger_5_Grp/R_Finger_5/R_Finger_5_2_Grp/R_Finger_5_2
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Leg_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/Master_Ctrl_Grp/Master_Ctrl/Root_Ctrl_Grp/Root_Ctrl/R_Leg_Ctrl_Grp/R_Leg_Ctrl
+        weight: 1
+      - path: Controls_Group/R_Arm_Pole_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/R_Arm_Pole_Ctrl_Grp/R_Arm_Pole_Ctrl
+        weight: 1
+      - path: Controls_Group/R_Leg_Pole_Ctrl_Grp
+        weight: 1
+      - path: Controls_Group/R_Leg_Pole_Ctrl_Grp/R_Leg_Pole_Ctrl
+        weight: 1
+      - path: Data_Group
+        weight: 1
+      - path: Data_Group/Scalable_Grp
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/Head_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/Head_Jnt/Head_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_1_Jnt/L_Finger_1_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_1_Jnt/L_Finger_1_1_Jnt/L_Finger_1_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_2_Jnt/L_Finger_2_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_2_Jnt/L_Finger_2_1_Jnt/L_Finger_2_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_2_Jnt/L_Finger_2_1_Jnt/L_Finger_2_2_Jnt/L_Finger_2_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_3_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_3_Jnt/L_Finger_3_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_3_Jnt/L_Finger_3_1_Jnt/L_Finger_3_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_3_Jnt/L_Finger_3_1_Jnt/L_Finger_3_2_Jnt/L_Finger_3_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_4_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_4_Jnt/L_Finger_4_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_4_Jnt/L_Finger_4_1_Jnt/L_Finger_4_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_4_Jnt/L_Finger_4_1_Jnt/L_Finger_4_2_Jnt/L_Finger_4_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_5_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_5_Jnt/L_Finger_5_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_5_Jnt/L_Finger_5_1_Jnt/L_Finger_5_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/L_Clavicle_Jnt/L_Shoulder_Jnt/L_Elbow_Jnt/L_Wrist_Jnt/L_Finger_5_Jnt/L_Finger_5_1_Jnt/L_Finger_5_2_Jnt/L_Finger_5_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_1_Jnt/R_Finger_1_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_1_Jnt/R_Finger_1_1_Jnt/R_Finger_1_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_2_Jnt/R_Finger_2_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_2_Jnt/R_Finger_2_1_Jnt/R_Finger_2_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_2_Jnt/R_Finger_2_1_Jnt/R_Finger_2_2_Jnt/R_Finger_2_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_3_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_3_Jnt/R_Finger_3_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_3_Jnt/R_Finger_3_1_Jnt/R_Finger_3_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_3_Jnt/R_Finger_3_1_Jnt/R_Finger_3_2_Jnt/R_Finger_3_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_4_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_4_Jnt/R_Finger_4_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_4_Jnt/R_Finger_4_1_Jnt/R_Finger_4_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_4_Jnt/R_Finger_4_1_Jnt/R_Finger_4_2_Jnt/R_Finger_4_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_5_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_5_Jnt/R_Finger_5_1_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_5_Jnt/R_Finger_5_1_Jnt/R_Finger_5_2_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/Belly_Jnt/R_Clavicle_Jnt/R_Shoulder_Jnt/R_Elbow_Jnt/R_Wrist_Jnt/R_Finger_5_Jnt/R_Finger_5_1_Jnt/R_Finger_5_2_Jnt/R_Finger_5_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt/L_leg_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt/L_leg_Jnt/L_knee_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt/L_leg_Jnt/L_knee_Jnt/L_ankle_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/L_Up_leg_Jnt/L_leg_Jnt/L_knee_Jnt/L_ankle_Jnt/L_ankle_JEnd
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt/R_leg_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt/R_leg_Jnt/R_knee_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt/R_leg_Jnt/R_knee_Jnt/R_ankle_Jnt
+        weight: 1
+      - path: Data_Group/Scalable_Grp/Hips_Jnt/R_Up_leg_Jnt/R_leg_Jnt/R_knee_Jnt/R_ankle_Jnt/R_ankle_JEnd
+        weight: 1
+      - path: Data_Group/Static_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster1_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster1_Grp/cluster1Handle
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster2_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster2_Grp/cluster2Handle
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster3_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/cluster3_Grp/cluster3Handle
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/L_Arm_ikHandle_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/L_Arm_ikHandle_Grp/L_Arm_ikHandle
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/L_Leg_ikHandle_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/L_Leg_ikHandle_Grp/L_Leg_ikHandle
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/R_Arm_ikHandle_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/R_Arm_ikHandle_Grp/R_Arm_ikHandle
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/R_Leg_ikHandle_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/IkHandles_Grp/R_Leg_ikHandle_Grp/R_Leg_ikHandle
+        weight: 1
+      - path: Data_Group/Static_Grp/Spline_Grp
+        weight: 1
+      - path: Data_Group/Static_Grp/Spline_Grp/Spline_IKH
+        weight: 1
+      - path: Data_Group/Static_Grp/Spline_Grp/Spline_IKH_crv
+        weight: 1
+      - path: Render_Mesh
+        weight: 1
+      - path: Render_Mesh/BODY:Mesh
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
