@@ -42,13 +42,14 @@ public class CockpitButton : MonoBehaviour {
 	private void HandleClick()
 	{
 		Debug.Log ("Test");
-		bodyAnimator.SetTrigger (animationCall);
+		bodyAnimator.SetTrigger ("Press");
 	}
 
 	//Handle the Click event
 	private void HandleOver()
 	{
 		buttomAnimator.SetBool ("isOver", true);
+		bodyAnimator.SetBool (animationCall, true);
 		Debug.Log ("Test");
 
 	}
@@ -56,6 +57,7 @@ public class CockpitButton : MonoBehaviour {
 	private void HandleOut()
 	{
 		buttomAnimator.SetBool ("isOver", false);
+		bodyAnimator.SetBool (animationCall, false);
 	}
 
 }
