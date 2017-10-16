@@ -1,0 +1,3 @@
+- A Camera está consumindo cerca de 80% do processamento por conta da grande quantidade de post processing fx aplicados. (imagem #1) 
+
+- Varios erros de Shaders foram encontrados. (imagem #2)
