@@ -10,9 +10,12 @@ public class CockpitButton : MonoBehaviour {
 	[SerializeField] private Animator buttomAnimator;
 	[SerializeField] private string animationCall;
 
+	private Popup_Controller popupControl;
+
 	// Use this for initialization
 	void Start () {
-		
+
+		popupControl = GetComponentInChildren<Popup_Controller> ();
 	}
 	
 	// Update is called once per frame
@@ -41,8 +44,10 @@ public class CockpitButton : MonoBehaviour {
 	//Handle the Click event
 	private void HandleClick()
 	{
-		Debug.Log ("Test");
 		bodyAnimator.SetTrigger ("Press");
+		if (popupControl != null) {
+			popupControl.Activate ();
+		}
 	}
 
 	//Handle the Click event
@@ -50,7 +55,6 @@ public class CockpitButton : MonoBehaviour {
 	{
 		buttomAnimator.SetBool ("isOver", true);
 		bodyAnimator.SetBool (animationCall, true);
-		Debug.Log ("Test");
 
 	}
 
